@@ -11,7 +11,9 @@ let package = Package(
     ],
     products: [
         .library(name: "TidalAPIInterchangeKit",
-                 targets: ["TidalAPIInterchangeKit"])
+                 targets: ["TidalAPIInterchangeKit"]),
+        .library(name: "TidalAPIDataPresets",
+                 targets: ["TidalAPIDataPresets"])
     ],
     dependencies: [
         .package(url: "https://github.com/antarianLogic/interchange", from: "1.0.4")
@@ -19,7 +21,11 @@ let package = Package(
     targets: [
         .target(name: "TidalAPIInterchangeKit",
                 dependencies: [.product(name: "Interchange", package: "interchange")]),
+        .target(name: "TidalAPIDataPresets",
+                dependencies: ["TidalAPIInterchangeKit"],
+                resources: [.copy("JSON")]),
         .testTarget(name: "TidalAPIInterchangeKitTests",
-                    dependencies: ["TidalAPIInterchangeKit"])
+                    dependencies: ["TidalAPIInterchangeKit",
+                                   "TidalAPIDataPresets"])
     ]
 )

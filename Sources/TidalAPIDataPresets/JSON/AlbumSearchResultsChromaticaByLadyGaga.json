@@ -1,0 +1,1510 @@
+{
+  "data": {
+    "id": "chromatica-lady+gaga",
+    "type": "searchResults",
+    "attributes": {
+      "trackingId": "7ac87c86-1b27-414c-9d11-db5d26e819dd"
+    },
+    "relationships": {
+      "albums": {
+        "data": [
+          {
+            "id": "143020722",
+            "type": "albums"
+          },
+          {
+            "id": "196317216",
+            "type": "albums"
+          },
+          {
+            "id": "77707015",
+            "type": "albums"
+          },
+          {
+            "id": "77707060",
+            "type": "albums"
+          },
+          {
+            "id": "421850005",
+            "type": "albums"
+          },
+          {
+            "id": "65988637",
+            "type": "albums"
+          },
+          {
+            "id": "116143564",
+            "type": "albums"
+          },
+          {
+            "id": "35618177",
+            "type": "albums"
+          },
+          {
+            "id": "79583662",
+            "type": "albums"
+          },
+          {
+            "id": "77669919",
+            "type": "albums"
+          },
+          {
+            "id": "246965715",
+            "type": "albums"
+          },
+          {
+            "id": "420333622",
+            "type": "albums"
+          },
+          {
+            "id": "389681225",
+            "type": "albums"
+          },
+          {
+            "id": "188834020",
+            "type": "albums"
+          },
+          {
+            "id": "298775857",
+            "type": "albums"
+          }
+        ],
+        "links": {
+          "self": "/searchResults/chromatica-lady+gaga/relationships/albums?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "artists": {
+        "links": {
+          "self": "/searchResults/chromatica-lady+gaga/relationships/artists?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "playlists": {
+        "links": {
+          "self": "/searchResults/chromatica-lady+gaga/relationships/playlists?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "videos": {
+        "links": {
+          "self": "/searchResults/chromatica-lady+gaga/relationships/videos?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "topHits": {
+        "links": {
+          "self": "/searchResults/chromatica-lady+gaga/relationships/topHits?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "tracks": {
+        "links": {
+          "self": "/searchResults/chromatica-lady+gaga/relationships/tracks?countryCode=US&explicitFilter=INCLUDE"
+        }
+      }
+    }
+  },
+  "links": {
+    "self": "/searchResults/chromatica-lady+gaga?include=albums&countryCode=US&explicitFilter=INCLUDE"
+  },
+  "included": [
+    {
+      "id": "116143564",
+      "type": "albums",
+      "attributes": {
+        "title": "ARTPOP",
+        "barcodeId": "00602508240843",
+        "numberOfVolumes": 1,
+        "numberOfItems": 14,
+        "duration": "PT55M28S",
+        "explicit": true,
+        "releaseDate": "2013-11-11",
+        "copyright": {
+          "text": "© 2013 UMG Recordings, Inc."
+        },
+        "popularity": 0.6988418364272846,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/116143564",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "createdAt": "2019-08-23T09:38:44Z"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/116143564/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/116143564/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/116143564/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/116143564/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/116143564/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/116143564/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/116143564/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/116143564/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/116143564/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/116143564/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/116143564/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "143020722",
+      "type": "albums",
+      "attributes": {
+        "title": "Chromatica",
+        "barcodeId": "00602508854101",
+        "numberOfVolumes": 1,
+        "numberOfItems": 16,
+        "duration": "PT43M10S",
+        "explicit": false,
+        "releaseDate": "2020-05-29",
+        "copyright": {
+          "text": "© 2020 Interscope Records"
+        },
+        "popularity": 0.750937883842661,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/143020722",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/143020722/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/143020722/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/143020722/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/143020722/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/143020722/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/143020722/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/143020722/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/143020722/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/143020722/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/143020722/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/143020722/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "188834020",
+      "type": "albums",
+      "attributes": {
+        "title": "BORN THIS WAY THE TENTH ANNIVERSARY",
+        "barcodeId": "00602438508969",
+        "numberOfVolumes": 2,
+        "numberOfItems": 20,
+        "duration": "PT1H26M37S",
+        "explicit": false,
+        "releaseDate": "2011-05-23",
+        "copyright": {
+          "text": "© 2021 Interscope Records"
+        },
+        "popularity": 0.5897687243802009,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/188834020",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/188834020/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/188834020/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/188834020/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/188834020/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/188834020/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/188834020/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/188834020/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/188834020/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/188834020/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/188834020/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/188834020/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "196317216",
+      "type": "albums",
+      "attributes": {
+        "title": "Dawn Of Chromatica",
+        "barcodeId": "00602438850792",
+        "numberOfVolumes": 1,
+        "numberOfItems": 14,
+        "duration": "PT49M45S",
+        "explicit": false,
+        "releaseDate": "2021-09-03",
+        "copyright": {
+          "text": "© 2021 Interscope Records"
+        },
+        "popularity": 0.6330653576358959,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/196317216",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/196317216/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/196317216/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/196317216/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/196317216/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/196317216/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/196317216/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/196317216/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/196317216/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/196317216/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/196317216/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/196317216/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "246965715",
+      "type": "albums",
+      "attributes": {
+        "title": "MOTOMAMI +",
+        "barcodeId": "886449876266",
+        "numberOfVolumes": 1,
+        "numberOfItems": 24,
+        "duration": "PT1H1M56S",
+        "explicit": true,
+        "releaseDate": "2022-03-18",
+        "copyright": {
+          "text": "(P) 2022 Columbia Records, a Division of Sony Music Entertainment"
+        },
+        "popularity": 0.6495134743523935,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/246965715",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "createdAt": "2022-09-06T18:51:02Z"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/246965715/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/246965715/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/246965715/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/246965715/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/246965715/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/246965715/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/246965715/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/246965715/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/246965715/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/246965715/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/246965715/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "298775857",
+      "type": "albums",
+      "attributes": {
+        "title": "PARANOÏA, ANGELS, TRUE LOVE",
+        "barcodeId": "5056556123873",
+        "numberOfVolumes": 3,
+        "numberOfItems": 20,
+        "duration": "PT1H37M7S",
+        "explicit": true,
+        "releaseDate": "2023-06-09",
+        "copyright": {
+          "text": "Because Music"
+        },
+        "popularity": 0.5576142100098155,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "DOLBY_ATMOS",
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/298775857",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "createdAt": "2023-06-07T12:44:46Z"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/298775857/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/298775857/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/298775857/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/298775857/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/298775857/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/298775857/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/298775857/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/298775857/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/298775857/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/298775857/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/298775857/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "35618177",
+      "type": "albums",
+      "attributes": {
+        "title": "Born This Way (Special Edition)",
+        "barcodeId": "00602527641256",
+        "numberOfVolumes": 2,
+        "numberOfItems": 22,
+        "duration": "PT1H39M54S",
+        "explicit": false,
+        "releaseDate": "2011-05-23",
+        "copyright": {
+          "text": "© 2011 Interscope Records"
+        },
+        "popularity": 0.6916968360921093,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/35618177",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "version": "Special Edition"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/35618177/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/35618177/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/35618177/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/35618177/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/35618177/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/35618177/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/35618177/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/35618177/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/35618177/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/35618177/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/35618177/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "389681225",
+      "type": "albums",
+      "attributes": {
+        "title": "Harlequin",
+        "barcodeId": "00602475298939",
+        "numberOfVolumes": 1,
+        "numberOfItems": 13,
+        "duration": "PT41M28S",
+        "explicit": false,
+        "releaseDate": "2024-09-27",
+        "copyright": {
+          "text": "© 2024 Lil Monsters LLC, under exclusive license to Interscope Records"
+        },
+        "popularity": 0.6240230237883158,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/389681225",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "createdAt": "2024-09-26T04:33:54Z"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/389681225/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/389681225/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/389681225/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/389681225/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/389681225/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/389681225/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/389681225/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/389681225/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/389681225/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/389681225/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/389681225/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "420333622",
+      "type": "albums",
+      "attributes": {
+        "title": "Alter Ego",
+        "barcodeId": "196872806434",
+        "numberOfVolumes": 1,
+        "numberOfItems": 15,
+        "duration": "PT42M45S",
+        "explicit": true,
+        "releaseDate": "2025-02-28",
+        "copyright": {
+          "text": "(P) 2025 RCA Records, under exclusive license from Lloud Co."
+        },
+        "popularity": 0.6271908140664068,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/420333622",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "createdAt": "2025-02-25T23:55:00Z"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/420333622/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/420333622/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/420333622/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/420333622/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/420333622/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/420333622/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/420333622/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/420333622/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/420333622/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/420333622/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/420333622/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "421850005",
+      "type": "albums",
+      "attributes": {
+        "title": "MAYHEM",
+        "barcodeId": "00602475898382",
+        "numberOfVolumes": 1,
+        "numberOfItems": 14,
+        "duration": "PT53M12S",
+        "explicit": true,
+        "releaseDate": "2025-03-07",
+        "copyright": {
+          "text": "© 2025 Interscope Records"
+        },
+        "popularity": 0.7452370586697767,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/421850005",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "createdAt": "2025-03-04T17:45:52Z"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/421850005/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/421850005/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/421850005/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/421850005/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/421850005/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/421850005/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/421850005/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/421850005/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/421850005/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/421850005/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/421850005/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "65988637",
+      "type": "albums",
+      "attributes": {
+        "title": "Joanne (Deluxe)",
+        "barcodeId": "00602557205114",
+        "numberOfVolumes": 1,
+        "numberOfItems": 14,
+        "duration": "PT47M19S",
+        "explicit": true,
+        "releaseDate": "2016-10-21",
+        "copyright": {
+          "text": "© 2016 Interscope Records"
+        },
+        "popularity": 0.7227961120957945,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/65988637",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "version": "Deluxe"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/65988637/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/65988637/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/65988637/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/65988637/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/65988637/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/65988637/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/65988637/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/65988637/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/65988637/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/65988637/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/65988637/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77669919",
+      "type": "albums",
+      "attributes": {
+        "title": "Born This Way",
+        "barcodeId": "00602557427929",
+        "numberOfVolumes": 1,
+        "numberOfItems": 14,
+        "duration": "PT1H1M13S",
+        "explicit": false,
+        "releaseDate": "2011-05-23",
+        "copyright": {
+          "text": "© 2011 Interscope Records"
+        },
+        "popularity": 0.6878251157117317,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/77669919",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/77669919/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/77669919/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/77669919/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/77669919/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/77669919/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/77669919/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/77669919/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/77669919/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/77669919/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/77669919/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/77669919/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77707015",
+      "type": "albums",
+      "attributes": {
+        "title": "The Fame",
+        "barcodeId": "00602557434545",
+        "numberOfVolumes": 1,
+        "numberOfItems": 15,
+        "duration": "PT54M3S",
+        "explicit": true,
+        "releaseDate": "2008-10-28",
+        "copyright": {
+          "text": "© 2008 Interscope Records"
+        },
+        "popularity": 0.7896112655972242,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/77707015",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/77707015/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/77707015/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/77707015/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/77707015/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/77707015/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/77707015/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/77707015/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/77707015/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/77707015/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/77707015/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/77707015/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77707060",
+      "type": "albums",
+      "attributes": {
+        "title": "The Fame Monster",
+        "barcodeId": "00602557434583",
+        "numberOfVolumes": 1,
+        "numberOfItems": 9,
+        "duration": "PT39M12S",
+        "explicit": true,
+        "releaseDate": "2009-11-23",
+        "copyright": {
+          "text": "© 2010 Interscope Records"
+        },
+        "popularity": 0.7674686498204085,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/77707060",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM",
+        "createdAt": "2017-08-21T18:40:28Z"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/77707060/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/77707060/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/77707060/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/77707060/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/77707060/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/77707060/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/77707060/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/77707060/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/77707060/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/77707060/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/77707060/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "79583662",
+      "type": "albums",
+      "attributes": {
+        "title": "MASSEDUCTION",
+        "barcodeId": "00888072384941",
+        "numberOfVolumes": 1,
+        "numberOfItems": 13,
+        "duration": "PT41M43S",
+        "explicit": true,
+        "releaseDate": "2017-10-13",
+        "copyright": {
+          "text": "© 2017 Loma Vista Recordings., Distributed by Concord Music Group, Inc."
+        },
+        "popularity": 0.6903051306317483,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/79583662",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/79583662/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/79583662/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/79583662/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/79583662/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/79583662/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/79583662/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/79583662/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/79583662/relationships/providers?countryCode=US"
+          }
+        },
+        "usageRules": {
+          "links": {
+            "self": "/albums/79583662/relationships/usageRules?countryCode=US"
+          }
+        },
+        "priceConfig": {
+          "links": {
+            "self": "/albums/79583662/relationships/priceConfig?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/79583662/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    }
+  ]
+}

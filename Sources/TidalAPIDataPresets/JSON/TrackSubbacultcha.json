@@ -1,0 +1,125 @@
+{
+  "data": {
+    "id": "106473276",
+    "type": "tracks",
+    "attributes": {
+      "title": "Subbacultcha",
+      "version": null,
+      "isrc": "GBAFL9100108",
+      "duration": "PT2M10S",
+      "copyright": {
+        "text": "4AD Ltd"
+      },
+      "explicit": false,
+      "popularity": 0.5678694072557561,
+      "accessType": "PUBLIC",
+      "availability": [
+        "STREAM",
+        "DJ"
+      ],
+      "mediaTags": [
+        "LOSSLESS"
+      ],
+      "externalLinks": [
+        {
+          "href": "https://tidal.com/browse/track/106473276",
+          "meta": {
+            "type": "TIDAL_SHARING"
+          }
+        }
+      ],
+      "spotlighted": false,
+      "createdAt": "2019-03-25T17:10:07Z"
+    },
+    "relationships": {
+      "usageRules": {
+        "links": {
+          "self": "/tracks/106473276/relationships/usageRules?countryCode=US"
+        }
+      },
+      "suggestedTracks": {
+        "links": {
+          "self": "/tracks/106473276/relationships/suggestedTracks?countryCode=US"
+        }
+      },
+      "albums": {
+        "links": {
+          "self": "/tracks/106473276/relationships/albums?countryCode=US"
+        }
+      },
+      "trackStatistics": {
+        "links": {
+          "self": "/tracks/106473276/relationships/trackStatistics?countryCode=US"
+        }
+      },
+      "similarTracks": {
+        "links": {
+          "self": "/tracks/106473276/relationships/similarTracks?countryCode=US"
+        }
+      },
+      "priceConfig": {
+        "links": {
+          "self": "/tracks/106473276/relationships/priceConfig?countryCode=US"
+        }
+      },
+      "owners": {
+        "links": {
+          "self": "/tracks/106473276/relationships/owners?countryCode=US"
+        }
+      },
+      "sourceFile": {
+        "links": {
+          "self": "/tracks/106473276/relationships/sourceFile?countryCode=US"
+        }
+      },
+      "radio": {
+        "links": {
+          "self": "/tracks/106473276/relationships/radio?countryCode=US"
+        }
+      },
+      "shares": {
+        "links": {
+          "self": "/tracks/106473276/relationships/shares?countryCode=US"
+        }
+      },
+      "credits": {
+        "links": {
+          "self": "/tracks/106473276/relationships/credits?countryCode=US"
+        }
+      },
+      "artists": {
+        "links": {
+          "self": "/tracks/106473276/relationships/artists?countryCode=US"
+        }
+      },
+      "genres": {
+        "links": {
+          "self": "/tracks/106473276/relationships/genres?countryCode=US"
+        }
+      },
+      "lyrics": {
+        "links": {
+          "self": "/tracks/106473276/relationships/lyrics?countryCode=US"
+        }
+      },
+      "replacement": {
+        "links": {
+          "self": "/tracks/106473276/relationships/replacement?countryCode=US"
+        }
+      },
+      "metadataStatus": {
+        "links": {
+          "self": "/tracks/106473276/relationships/metadataStatus?countryCode=US"
+        }
+      },
+      "providers": {
+        "links": {
+          "self": "/tracks/106473276/relationships/providers?countryCode=US"
+        }
+      }
+    }
+  },
+  "links": {
+    "self": "/tracks/106473276?countryCode=US"
+  }
+}

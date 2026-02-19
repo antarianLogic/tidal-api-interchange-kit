@@ -1,0 +1,98 @@
+{
+  "data": {
+    "id": "77610756",
+    "type": "albums",
+    "attributes": {
+      "title": "Nevermind",
+      "barcodeId": "00602537498659",
+      "numberOfVolumes": 1,
+      "numberOfItems": 13,
+      "duration": "PT49M23S",
+      "explicit": true,
+      "releaseDate": "1991-09-24",
+      "copyright": {
+        "text": "© 2011 Geffen Records"
+      },
+      "popularity": 0.8484062030230879,
+      "accessType": "PUBLIC",
+      "availability": [
+        "STREAM",
+        "DJ"
+      ],
+      "mediaTags": [
+        "HIRES_LOSSLESS",
+        "LOSSLESS"
+      ],
+      "externalLinks": [
+        {
+          "href": "https://tidal.com/browse/album/77610756",
+          "meta": {
+            "type": "TIDAL_SHARING"
+          }
+        }
+      ],
+      "type": "ALBUM",
+      "albumType": "ALBUM"
+    },
+    "relationships": {
+      "usageRules": {
+        "links": {
+          "self": "/albums/77610756/relationships/usageRules?countryCode=US"
+        }
+      },
+      "similarAlbums": {
+        "links": {
+          "self": "/albums/77610756/relationships/similarAlbums?countryCode=US"
+        }
+      },
+      "artists": {
+        "links": {
+          "self": "/albums/77610756/relationships/artists?countryCode=US"
+        }
+      },
+      "genres": {
+        "links": {
+          "self": "/albums/77610756/relationships/genres?countryCode=US"
+        }
+      },
+      "suggestedCoverArts": {
+        "links": {
+          "self": "/albums/77610756/relationships/suggestedCoverArts?countryCode=US"
+        }
+      },
+      "priceConfig": {
+        "links": {
+          "self": "/albums/77610756/relationships/priceConfig?countryCode=US"
+        }
+      },
+      "owners": {
+        "links": {
+          "self": "/albums/77610756/relationships/owners?countryCode=US"
+        }
+      },
+      "coverArt": {
+        "links": {
+          "self": "/albums/77610756/relationships/coverArt?countryCode=US"
+        }
+      },
+      "items": {
+        "links": {
+          "self": "/albums/77610756/relationships/items?countryCode=US"
+        }
+      },
+      "replacement": {
+        "links": {
+          "self": "/albums/77610756/relationships/replacement?countryCode=US"
+        }
+      },
+      "providers": {
+        "links": {
+          "self": "/albums/77610756/relationships/providers?countryCode=US"
+        }
+      }
+    }
+  },
+  "links": {
+    "self": "/albums/77610756?countryCode=US"
+  }
+}

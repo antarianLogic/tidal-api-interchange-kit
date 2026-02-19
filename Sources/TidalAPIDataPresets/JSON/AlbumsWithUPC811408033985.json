@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "id": "168148780",
+      "type": "albums",
+      "attributes": {
+        "title": "Nevermind",
+        "barcodeId": "811408033985",
+        "numberOfVolumes": 1,
+        "numberOfItems": 12,
+        "duration": "PT42M46S",
+        "explicit": false,
+        "releaseDate": "2019-11-22",
+        "copyright": {
+          "text": "Bad Timing Records and Many Hats Distribution"
+        },
+        "popularity": 0.23180963586590078,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/album/168148780",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "type": "ALBUM",
+        "albumType": "ALBUM"
+      },
+      "relationships": {
+        "similarAlbums": {
+          "links": {
+            "self": "/albums/168148780/relationships/similarAlbums?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/albums/168148780/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/albums/168148780/relationships/genres?countryCode=US"
+          }
+        },
+        "suggestedCoverArts": {
+          "links": {
+            "self": "/albums/168148780/relationships/suggestedCoverArts?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/albums/168148780/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/albums/168148780/relationships/coverArt?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/albums/168148780/relationships/items?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/albums/168148780/relationships/providers?countryCode=US"
+          }
+        },
+        "replacement": {
+          "links": {
+            "self": "/albums/168148780/relationships/replacement?countryCode=US"
+          }
+        }
+      }
+    }
+  ],
+  "links": {
+    "self": "/albums?filter%5BbarcodeId%5D=811408033985&countryCode=US"
+  }
+}
