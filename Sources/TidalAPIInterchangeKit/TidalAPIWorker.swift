@@ -6,6 +6,7 @@
 //  Copyright © 2026 Antarian Logic LLC. All rights reserved.
 //
 
+import Foundation
 import Interchange
 
 public actor TidalAPIWorker {
@@ -33,6 +34,7 @@ public actor TidalAPIWorker {
     private let authManager: InterchangeManaging
     private let apiManager: InterchangeManaging
     private var accessToken: String?
+    private var tokenExpiration = Date.distantPast
 
     /// Returns the tracks for a given artist with a known TIDAL ID
     ///
@@ -234,7 +236,7 @@ public actor TidalAPIWorker {
     }
 
     private func checkAuth() async throws -> Bool {
-        guard accessToken == nil else { return true }
+        guard accessToken == nil || tokenExpiration.timeIntervalSinceNow < 60 else { return true }
 
         try await authorize()
 
@@ -242,10 +244,8 @@ public actor TidalAPIWorker {
     }
 
     private func authorize() async throws {
-        guard accessToken == nil else { return }
-
         let endpoint = TidalAuthEndpoints.authToken(clientID: clientID,
-                                                         clientSecret: clientSecret)
+                                                    clientSecret: clientSecret)
         let response: TidalAuthResponse = try await authManager.sendRequest(with: endpoint)
 
         guard response.tokenType.lowercased() == "bearer" else {
@@ -253,5 +253,6 @@ public actor TidalAPIWorker {
         }
 
         accessToken = response.accessToken
+        tokenExpiration = Date(timeIntervalSinceNow: TimeInterval(response.expiresIn))
     }
 }

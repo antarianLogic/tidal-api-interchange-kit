@@ -11,7 +11,8 @@ import TidalAPIInterchangeKit
 
 public extension TidalAuthResponse {
     enum Presets {
-        public static let validToken = TidalAuthResponse(accessToken: "MOCK_ACCESS_TOKEN", expiresIn: 60, tokenType: "bearer")
-        public static let invalidToken = TidalAuthResponse(accessToken: "MOCK_ACCESS_TOKEN", expiresIn: 60, tokenType: "invalid")
+        public static let validToken = TidalAuthResponse(accessToken: "MOCK_ACCESS_TOKEN", expiresIn: 3600, tokenType: "bearer")
+        public static let invalidToken = TidalAuthResponse(accessToken: "MOCK_ACCESS_TOKEN", expiresIn: 3600, tokenType: "invalid")
+        public static let nearlyExpired = TidalAuthResponse(accessToken: "MOCK_ACCESS_TOKEN", expiresIn: 61, tokenType: "bearer")
     }
 }
