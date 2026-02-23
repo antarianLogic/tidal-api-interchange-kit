@@ -232,7 +232,7 @@ If the above code was used, `checkAuth()` would then be called and checked befor
     // ...
     // In async context:
     do {
-        let albums = try await sut.searchAlbums(withTitle: "Nevermind", artistName: "Nirvana")
+        let albums = try await worker.searchAlbums(withTitle: "Nevermind", artistName: "Nirvana")
 
         print("Albums: \(albums)")
     } catch {
@@ -251,7 +251,7 @@ If the above code was used, `checkAuth()` would then be called and checked befor
         print("Error: TIDAL authorization failed")
         return
     }
-    // Set up endpoint, including escaping spaces and other special characters in query since it will be part of path
+    // Set up endpoint, including URL encoding spaces and other special characters in query since it will be part of path
     let rawQueryString = "Nevermind - Nirvana"
     guard let queryString = rawQueryString.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
         print("Error: Could not escape search query string: \"\(rawQueryString)\"")
@@ -281,7 +281,7 @@ If the above code was used, `checkAuth()` would then be called and checked befor
     // ...
     // In async context:
     do {
-        let tracks = try await sut.getTracksForArtist(withID: "SOME_ARTIST_ID")
+        let tracks = try await worker.getTracksForArtist(withID: "SOME_ARTIST_ID")
 
         print("Tracks: \(tracks)")
     } catch {
