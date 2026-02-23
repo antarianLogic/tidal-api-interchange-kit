@@ -18,7 +18,7 @@ extension TidalAPIError: CustomDebugStringConvertible {
     public var debugDescription: String {
         switch self {
         case let .couldNotEscapeString(rawString):
-            return "Could not escape serach query string: \"\(rawString)\""
+            return "Could not escape search query string: \"\(rawString)\""
         case let .invalidInput(invalidString):
             return "Invalid input: \"\(invalidString)\""
         case .noItemsFound:

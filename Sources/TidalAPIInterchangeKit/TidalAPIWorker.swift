@@ -97,34 +97,6 @@ public actor TidalAPIWorker {
         return albumRes.data
     }
 
-    /// Returns track details for a known TIDAL track ID
-    ///
-    /// - Parameters:
-    ///   - withID: TIDAL track ID string
-    ///   - countryCode: Country code string. Defaults to "US".
-    /// - Returns: TidalTrack
-    ///
-    public func getTrack(withID trackID: String,
-                         countryCode: String = "US") async throws -> TidalTrack {
-        // First check TIDAL authorization...
-        guard try await checkAuth(),
-              let accessToken else {
-            throw TidalAuthError.nilAccessToken
-        }
-        // Check for invalid track ID...
-        let trimmedID = trackID.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmedID.isEmpty else {
-            throw TidalAPIError.invalidInput(trackID)
-        }
-        // Now make API request...
-        let endpoint = TidalAPIEndpoints.getTrack(withID: trimmedID,
-                                                  accessToken: accessToken,
-                                                  countryCode: countryCode)
-        let trackRes: TidalTrackResource = try await apiManager.sendRequest(with: endpoint)
-
-        return trackRes.data
-    }
-
     /// Retrieves the TIDAL catalog for albums with a known UPC code
     ///
     /// - Parameters:
@@ -155,6 +127,34 @@ public actor TidalAPIWorker {
         }
 
         return albumsResource.data
+    }
+
+    /// Returns track details for a known TIDAL track ID
+    ///
+    /// - Parameters:
+    ///   - withID: TIDAL track ID string
+    ///   - countryCode: Country code string. Defaults to "US".
+    /// - Returns: TidalTrack
+    ///
+    public func getTrack(withID trackID: String,
+                         countryCode: String = "US") async throws -> TidalTrack {
+        // First check TIDAL authorization...
+        guard try await checkAuth(),
+              let accessToken else {
+            throw TidalAuthError.nilAccessToken
+        }
+        // Check for invalid track ID...
+        let trimmedID = trackID.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedID.isEmpty else {
+            throw TidalAPIError.invalidInput(trackID)
+        }
+        // Now make API request...
+        let endpoint = TidalAPIEndpoints.getTrack(withID: trimmedID,
+                                                  accessToken: accessToken,
+                                                  countryCode: countryCode)
+        let trackRes: TidalTrackResource = try await apiManager.sendRequest(with: endpoint)
+
+        return trackRes.data
     }
 
     /// Searches the TIDAL catalog for albums with a known title from artists with a known name
