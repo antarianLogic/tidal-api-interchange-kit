@@ -15,6 +15,38 @@
 - Swift 6.0+
 - Xcode 14.0+
 
+## Installation
+
+Do ONE of the following, depending on whether you are adding this package as a dependency to an app-level Xcode project or another Swift Package.
+
+### App-level Projects
+
+Add a package dependency for `https://github.com/antarianLogic/tidal-api-interchange-kit` to your project through Xcode. For more information see [Adding Package Dependencies](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
+
+### Swift Packages
+
+Add a package dependency for `tidal-api-interchange-kit` to your `Package.swift`:
+
+```swift
+dependencies: [
+    // ...
+    .package(url: "https://github.com/antarianLogic/tidal-api-interchange-kit", from: "0.2.0")
+]
+```
+
+And add the `TidalAPIInterchangeKit` product to your target dependencies in `Package.swift` as well:
+
+```swift
+targets: [
+    .target(name: "YOUR_TARGET_NAME",
+            dependencies: [
+                // ...
+                .product(name: "TidalAPIInterchangeKit", package: "tidal-api-interchange-kit")
+            ]),
+    // ...
+]
+```
+
 ## Overview
 
 This package contains a collection of TIDAL API endpoint specifications in the form of `RESTEndpoint` structs to be used with [Interchange](https://github.com/antarianLogic/interchange).
@@ -57,6 +89,9 @@ If the `TidalAPIWorker` is used, authorization is handled automatically but the 
 To handle authorization a bit more manually, use the `getAuthToken` of `TidalAuthEndpoints` as demonstrated below.
 
 ```swift
+    import Interchange
+    import TidalAPIInterchangeKit
+
     let authManager = InterchangeManager(baseURL: TidalAuthEndpoints.baseURL)
 
     var accessToken: String?
@@ -96,9 +131,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### `TidalAPIWorker` Approach
 
 ```swift
+    import TidalAPIInterchangeKit
+
     let worker = TidalAPIWorker(clientID: "YOUR_CLIENT_ID",
                                 clientSecret: "YOUR_CLIENT_SECRET")
-    // ...
+
     // Make TIDAL album lookup call for TIDAL ID (in async context)...
     do {
         let album = try await worker.getAlbum(withID: "SOME_TIDAL_ALBUM_ID")
@@ -113,8 +150,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### Manual Approach
 
 ```swift
+    import Interchange
+    import TidalAPIInterchangeKit
+
     let apiManager = InterchangeManager(baseURL: TidalAPIEndpoints.baseURL)
-    // ...
+
     // First check TIDAL authorization...
     guard await checkAuth(),
           let accessToken else {
@@ -141,9 +181,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### `TidalAPIWorker` Approach
 
 ```swift
+    import TidalAPIInterchangeKit
+
     let worker = TidalAPIWorker(clientID: "YOUR_CLIENT_ID",
                                 clientSecret: "YOUR_CLIENT_SECRET")
-    // ...
+
     // In async context:
     do {
         let albums = try await worker.getAlbums(withUPC: "SOME_ALBUM_UPC")
@@ -157,8 +199,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### Manual Approach
 
 ```swift
+    import Interchange
+    import TidalAPIInterchangeKit
+
     let apiManager = InterchangeManager(baseURL: TidalAPIEndpoints.baseURL)
-    // ...
+
     // First check TIDAL authorization...
     guard await checkAuth(),
           let accessToken else {
@@ -184,9 +229,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### `TidalAPIWorker` Approach
 
 ```swift
+    import TidalAPIInterchangeKit
+
     let worker = TidalAPIWorker(clientID: "YOUR_CLIENT_ID",
                                 clientSecret: "YOUR_CLIENT_SECRET")
-    // ...
+
     // In async context:
     do {
         let track = try await worker.getTrack(withUPC: "SOME_TRACK_ID")
@@ -200,8 +247,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### Manual Approach
 
 ```swift
+    import Interchange
+    import TidalAPIInterchangeKit
+
     let apiManager = InterchangeManager(baseURL: TidalAPIEndpoints.baseURL)
-    // ...
+
     // First check TIDAL authorization...
     guard await checkAuth(),
           let accessToken else {
@@ -227,9 +277,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### `TidalAPIWorker` Approach
 
 ```swift
+    import TidalAPIInterchangeKit
+
     let worker = TidalAPIWorker(clientID: "YOUR_CLIENT_ID",
                                 clientSecret: "YOUR_CLIENT_SECRET")
-    // ...
+
     // In async context:
     do {
         let albums = try await worker.searchAlbums(withTitle: "Nevermind", artistName: "Nirvana")
@@ -243,8 +295,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### Manual Approach
 
 ```swift
+    import Interchange
+    import TidalAPIInterchangeKit
+
     let apiManager = InterchangeManager(baseURL: TidalAPIEndpoints.baseURL)
-    // ...
+
     // First check TIDAL authorization...
     guard await checkAuth(),
           let accessToken else {
@@ -276,9 +331,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### `TidalAPIWorker` Approach
 
 ```swift
+    import TidalAPIInterchangeKit
+
     let worker = TidalAPIWorker(clientID: "YOUR_CLIENT_ID",
                                 clientSecret: "YOUR_CLIENT_SECRET")
-    // ...
+
     // In async context:
     do {
         let tracks = try await worker.getTracksForArtist(withID: "SOME_ARTIST_ID")
@@ -292,8 +349,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 #### Manual Approach
 
 ```swift
+    import Interchange
+    import TidalAPIInterchangeKit
+
     let apiManager = InterchangeManager(baseURL: TidalAPIEndpoints.baseURL)
-    // ...
+
     // First check TIDAL authorization...
     guard await checkAuth(),
           let accessToken else {
