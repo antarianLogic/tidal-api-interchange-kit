@@ -176,7 +176,7 @@ If the above code was used, `checkAuth()` would then be called and checked befor
     }
 ```
 
-### Find Albums with UPC
+### Find Albums with UPCs
 
 #### `TidalAPIWorker` Approach
 
@@ -188,11 +188,11 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 
     // In async context:
     do {
-        let albums = try await worker.getAlbums(withUPC: "SOME_ALBUM_UPC")
+        let albums = try await worker.getAlbums(withUPCs: ["SOME_ALBUM_UPC"])
 
-        print("Albums with UPC: \(albums)")
+        print("Albums with UPCs: \(albums)")
     } catch {
-        print("Get albums with UPC error: \(error.localizedDescription)")
+        print("Get albums with UPCs error: \(error.localizedDescription)")
     }
 ```
 
@@ -211,14 +211,14 @@ If the above code was used, `checkAuth()` would then be called and checked befor
         return
     }
     // Set up endpoint
-    let endpoint = TidalAPIEndpoints.getAlbums(withUPC: "SOME_ALBUM_UPC",
+    let endpoint = TidalAPIEndpoints.getAlbums(withUPCs: ["SOME_ALBUM_UPC"],
                                                accessToken: accessToken)
     // Now make actual network call (in async context)...
     do {
         let albumsRes: TidalAlbumsResource = try await apiManager.sendRequest(with: endpoint)
         let albums = albumsRes.data
 
-        print("Albums with UPC: \(albums)")
+        print("Albums with UPCs: \(albums)")
     } catch {
         print("sendRequest error: \(error.localizedDescription)")
     }
@@ -236,7 +236,7 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 
     // In async context:
     do {
-        let track = try await worker.getTrack(withUPC: "SOME_TRACK_ID")
+        let track = try await worker.getTrack(withID: "SOME_TRACK_ID")
 
         print("Track title: \(track.attributes?.title ?? "nil")")
     } catch {

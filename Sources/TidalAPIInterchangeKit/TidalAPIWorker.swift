@@ -97,27 +97,29 @@ public actor TidalAPIWorker {
         return albumRes.data
     }
 
-    /// Retrieves the TIDAL catalog for albums with a known UPC code
+    /// Retrieves the TIDAL catalog for albums with known UPC codes
     ///
     /// - Parameters:
-    ///   - withUPC: a valid album UPC code string
+    ///   - withUPCs: array of valid album UPC code strings
     ///   - countryCode: Country code string. Defaults to "US".
     /// - Returns: array of TidalAlbum
     ///
-    public func getAlbums(withUPC albumUPC: String,
+    public func getAlbums(withUPCs albumUPCs: [String],
                           countryCode: String = "US") async throws -> [TidalAlbum] {
         // First check TIDAL authorization...
         guard try await checkAuth(),
               let accessToken else {
             throw TidalAuthError.nilAccessToken
         }
-        // Check for invalid UPC...
-        let trimmedUPC = albumUPC.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmedUPC.isEmpty else {
-            throw TidalAPIError.invalidInput(albumUPC)
+        // Check for invalid UPCs...
+        let trimmedUPCs = albumUPCs
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
+        guard !trimmedUPCs.isEmpty else {
+            throw TidalAPIError.invalidInput(albumUPCs.joined(separator: ","))
         }
         // Now make API request...
-        let endpoint = TidalAPIEndpoints.getAlbums(withUPC: trimmedUPC,
+        let endpoint = TidalAPIEndpoints.getAlbums(withUPCs: trimmedUPCs,
                                                    accessToken: accessToken,
                                                    countryCode: countryCode)
         let albumsResource: TidalAlbumsResource = try await apiManager.sendRequest(with: endpoint)

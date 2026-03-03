@@ -109,10 +109,11 @@ struct TidalAPIWorkerTests {
         }
     }
 
-    @Test("Get albums with UPC",
-          arguments: ["811408033985",
-                      " abc "])
-    func getAlbums(upc: String) async throws {
+    @Test("Get albums with UPCs",
+          arguments: [["811408033985"],
+                      ["12345", "67890"],
+                      [" abc "]])
+    func getAlbums(upcs: [String]) async throws {
         let mockAuthManager = MockInterchangeManager()
         await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
         let mockAPIManager = MockInterchangeManager()
@@ -121,7 +122,7 @@ struct TidalAPIWorkerTests {
                                  clientSecret: "FAKE_CLIENT_SECRET",
                                  alternateAuthManager: mockAuthManager,
                                  alternateAPIManager: mockAPIManager)
-        let albums = try await sut.getAlbums(withUPC: upc)
+        let albums = try await sut.getAlbums(withUPCs: upcs)
         #expect(albums.count == 1)
         let firstAlbum = try #require(albums.first)
         #expect(firstAlbum.id == "168148780")
@@ -129,10 +130,11 @@ struct TidalAPIWorkerTests {
         #expect(firstAlbumAttributes.title == "Nevermind")
     }
 
-    @Test("Failing get albums with UPC",
-          arguments: ["",
-                      " "])
-    func failingGetAlbums(upc: String) async throws {
+    @Test("Failing get albums with UPCs",
+          arguments: [[""],
+                      ["", " "],
+                      [" "]])
+    func failingGetAlbums(upcs: [String]) async throws {
         let mockAuthManager = MockInterchangeManager()
         await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
         let mockAPIManager = MockInterchangeManager()
@@ -141,9 +143,9 @@ struct TidalAPIWorkerTests {
                                  clientSecret: "FAKE_CLIENT_SECRET",
                                  alternateAuthManager: mockAuthManager,
                                  alternateAPIManager: mockAPIManager)
-        let error = await #expect(throws: TidalAPIError.self) { try await sut.getAlbums(withUPC: upc) }
-        if case let .invalidInput(invalidUPC) = error {
-            #expect(invalidUPC == upc)
+        let error = await #expect(throws: TidalAPIError.self) { try await sut.getAlbums(withUPCs: upcs) }
+        if case let .invalidInput(invalidUPCs) = error {
+            #expect(invalidUPCs == upcs.joined(separator: ","))
         } else {
             Issue.record("Not a TidalAPIError.invalidInput")
         }

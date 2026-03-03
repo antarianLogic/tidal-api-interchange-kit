@@ -50,7 +50,7 @@ struct TidalAPIEndpointsTests {
     }
 
     func getAlbums() async throws {
-        let endpoint = TidalAPIEndpoints.getAlbums(withUPC: "fake_upc", accessToken: "fake_token")
+        let endpoint = TidalAPIEndpoints.getAlbums(withUPCs: ["fake_upc"], accessToken: "fake_token")
         #expect(endpoint.path == "/albums")
         #expect(endpoint.headers == ["Authorization" : "Bearer fake_token",
                                      "Accept": "application/vnd.api+json"])

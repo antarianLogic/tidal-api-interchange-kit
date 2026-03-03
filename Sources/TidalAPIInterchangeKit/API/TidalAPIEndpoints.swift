@@ -93,10 +93,10 @@ public enum TidalAPIEndpoints {
                             queryParameters: [URLQueryItem(name: "countryCode", value: countryCode)])
     }
 
-    /// Creates an endpoint suitable to return album details for a known album UPC
+    /// Creates an endpoint suitable to return album details for a list of known album UPCs
     ///
     /// - Parameters:
-    ///   - withUPC: album UPC (barcode number) string
+    ///   - withUPCs: array of album UPC (barcode number) strings
     ///   - accessToken: TIDAL access token previously returned from the ``authToken`` authorization endpoint from `TidalAuthEndpoints`
     ///   - countryCode: Country code string. Defaults to "US".
     /// - Returns: RESTEndpoint
@@ -110,23 +110,24 @@ public enum TidalAPIEndpoints {
     /// let apiManager = InterchangeManager(baseURL: TidalAPIEndpoints.baseURL)
     /// var accessToken: String?
     ///
-    /// let endpoint = TidalAPIEndpoints.getAlbums(withUPC: "SOME_ALBUM_UPC",
+    /// let endpoint = TidalAPIEndpoints.getAlbums(withUPCs: ["SOME_ALBUM_UPC"],
     ///                                            accessToken: accessToken)
     /// do {
-    ///     let album: TidalAlbumsResource = try await apiManager.sendRequest(with: endpoint)
+    ///     let res: TidalAlbumsResource = try await apiManager.sendRequest(with: endpoint)
     ///
-    ///     print("TIDAL album details: \(album)")
+    ///     print("TIDAL albums: \(res.data)")
     /// } catch {
     ///     print("sendRequest error: \(error.localizedDescription)")
     /// }
     /// ```
-    public static func getAlbums(withUPC upc: String,
+    public static func getAlbums(withUPCs albumUPCs: [String],
                                  accessToken: String,
                                  countryCode: String = "US") -> RESTEndpoint {
+        let upcsString = albumUPCs.joined(separator: ",")
         return RESTEndpoint(path: "/albums",
                             headers: headers(withAccessToken: accessToken),
                             queryParameters: [URLQueryItem(name: "countryCode", value: countryCode),
-                                              URLQueryItem(name: "filter[barcodeId]", value: upc)])
+                                              URLQueryItem(name: "filter[barcodeId]", value: upcsString)])
     }
 
     /// Creates an endpoint suitable to return track details for a known TIDAL track ID
