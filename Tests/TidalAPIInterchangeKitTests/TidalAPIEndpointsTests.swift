@@ -15,9 +15,9 @@ struct TidalAPIEndpointsTests {
         #expect(TidalAPIEndpoints.baseURL.absoluteString == "https://openapi.tidal.com/v2")
     }
 
-    @Test func artistsTracks() async throws {
-        let endpoint = TidalAPIEndpoints.artistsTracks(withID: "fake_id", accessToken: "fake_token")
-        #expect(endpoint.path == "/artists/fake_id/relationships/tracks")
+    @Test func artistTracks() async throws {
+        let endpoint = TidalAPIEndpoints.artistTracks(withID: "fake_id", accessToken: "fake_token")
+        #expect(endpoint.path == "/artists/fake_id")
         #expect(endpoint.headers == ["Authorization" : "Bearer fake_token",
                                      "Accept": "application/vnd.api+json"])
         #expect(endpoint.queryParameters.count == 3)

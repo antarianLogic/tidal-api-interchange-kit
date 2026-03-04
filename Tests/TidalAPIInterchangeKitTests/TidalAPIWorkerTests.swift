@@ -25,7 +25,11 @@ struct TidalAPIWorkerTests {
                                  clientSecret: "FAKE_CLIENT_SECRET",
                                  alternateAuthManager: mockAuthManager,
                                  alternateAPIManager: mockAPIManager)
-        let tracks = try await sut.getTracksForArtist(withID: id)
+        let artistAndTracks = try await sut.getTracksForArtist(withID: id)
+        #expect(artistAndTracks.data.id == "3565255")
+        let artistAttributes = try #require(artistAndTracks.data.attributes)
+        #expect(artistAttributes.name == "Pixies")
+        let tracks = try #require(artistAndTracks.included)
         #expect(tracks.count == 20)
         let firstTrack = try #require(tracks.first)
         #expect(firstTrack.id == "2203300")

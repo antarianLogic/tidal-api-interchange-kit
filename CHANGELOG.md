@@ -8,10 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-TBD
+- `TidalArtistAttributes`
 
 ### Changed
-- API call: `getAlbums(withUPC: String...` changed to `getAlbums(withUPCs albumUPCs: [String]...`
+- TidalAPIEndpoints: `getAlbums(withUPC: String...` changed to `getAlbums(withUPCs albumUPCs: [String]...`
+- TidalAPIEndpoints: `artistsTracks(withID:...` changed to `artistTracks(withID...`
+- TidalAPIWorker: `getTracksForArtist` now returns `TidalArtistTracks`
+- `TidalResource` changed to `TidalArtist`
+- `TidalArtistTracks`
 
 ### Deprecated
 TBD

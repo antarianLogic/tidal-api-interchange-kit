@@ -64,13 +64,13 @@ Current TIDAL Authorization endpoints (`https://auth.tidal.com/v1/...`) supporte
 
 Current TIDAL API endpoints (`https://openapi.tidal.com/v2/...`) supported are:
 
-| Path                               | `TidalAPIEndpoints` Method | `sendRequest` Return Type | `TidalAPIWorker` Method | `TidalAPIWorker` Return Type |
-| ---------------------------------- | -------------------------- | ------------------------- | ----------------------- | ---------------------------- |
-| /artists/{id}/relationships/tracks | `artistsTracks`            | `TidalArtistTracks`       | `getTracksForArtist`    | `[TidalTrack]`               |
-| /albums/{id}                       | `getAlbum`                 | `TidalAlbumResource`      | `getAlbum`              | `TidalAlbum`                 |
-| /albums                            | `getAlbums`                | `TidalAlbumsResource`     | `getAlbums`             | `[TidalAlbum]`               |
-| /tracks/{id}                       | `getTrack`                 | `TidalTrackResource`      | `getTrack`              | `TidalTrack`                 |
-| /searchResults/{query}             | `search`                   | `TidalAlbumSearchResults` | `searchAlbums`          | `[TidalAlbum]`               |
+| Path                   | `TidalAPIEndpoints` Method | `sendRequest` Return Type | `TidalAPIWorker` Method | `TidalAPIWorker` Return Type |
+| ---------------------- | -------------------------- | ------------------------- | ----------------------- | ---------------------------- |
+| /artists/{id}          | `artistTracks`             | `TidalArtistTracks`       | `getTracksForArtist`    | `TidalArtistTracks`          |
+| /albums/{id}           | `getAlbum`                 | `TidalAlbumResource`      | `getAlbum`              | `TidalAlbum`                 |
+| /albums                | `getAlbums`                | `TidalAlbumsResource`     | `getAlbums`             | `[TidalAlbum]`               |
+| /tracks/{id}           | `getTrack`                 | `TidalTrackResource`      | `getTrack`              | `TidalTrack`                 |
+| /searchResults/{query} | `search`                   | `TidalAlbumSearchResults` | `searchAlbums`          | `[TidalAlbum]`               |
 
 ## Future Development
 
@@ -338,9 +338,9 @@ If the above code was used, `checkAuth()` would then be called and checked befor
 
     // In async context:
     do {
-        let tracks = try await worker.getTracksForArtist(withID: "SOME_ARTIST_ID")
+        let artistAndTracks = try await worker.getTracksForArtist(withID: "SOME_ARTIST_ID")
 
-        print("Tracks: \(tracks)")
+        print("Artist and tracks: \(artistAndTracks)")
     } catch {
         print("Get tracks for artist error: \(error.localizedDescription)")
     }
@@ -361,8 +361,8 @@ If the above code was used, `checkAuth()` would then be called and checked befor
         return
     }
     // Set up endpoint
-    let endpoint = TidalAPIEndpoints.artistsTracks(withID: "SOME_TRACK_ID",
-                                                   accessToken: accessToken)
+    let endpoint = TidalAPIEndpoints.artistTracks(withID: "SOME_TRACK_ID",
+                                                  accessToken: accessToken)
     // Now make actual network call (in async context)...
     do {
         let artistTracks: TidalArtistTracks = try await apiManager.sendRequest(with: endpoint)

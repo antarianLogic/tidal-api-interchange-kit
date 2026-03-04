@@ -36,22 +36,22 @@ public enum TidalAPIEndpoints {
     /// let apiManager = InterchangeManager(baseURL: TidalAPIEndpoints.baseURL)
     /// var accessToken: String?
     ///
-    /// let endpoint = TidalAPIEndpoints.artistsTracks(withID: "SOME_ARTIST_ID",
-    ///                                                accessToken: accessToken)
+    /// let endpoint = TidalAPIEndpoints.artistTracks(withID: "SOME_ARTIST_ID",
+    ///                                               accessToken: accessToken)
     /// do {
-    ///     let rel: TidalArtistTracks = try await apiManager.sendRequest(with: endpoint)
+    ///     let artistTracks: TidalArtistTracks = try await apiManager.sendRequest(with: endpoint)
     ///
-    ///     guard let tracks = rel.included else { return }
+    ///     guard let tracks = artistTracks.included else { return }
     ///
     ///     print("TIDAL tracks: \(tracks)")
     /// } catch {
     ///     print("sendRequest error: \(error.localizedDescription)")
     /// }
     /// ```
-    public static func artistsTracks(withID id: String,
-                                     accessToken: String,
-                                     countryCode: String = "US") -> RESTEndpoint {
-        return RESTEndpoint(path: "/artists/\(id)/relationships/tracks",
+    public static func artistTracks(withID id: String,
+                                    accessToken: String,
+                                    countryCode: String = "US") -> RESTEndpoint {
+        return RESTEndpoint(path: "/artists/\(id)",
                             headers: headers(withAccessToken: accessToken),
                             queryParameters: [URLQueryItem(name: "collapseBy", value: "FINGERPRINT"),
                                               URLQueryItem(name: "countryCode", value: countryCode),

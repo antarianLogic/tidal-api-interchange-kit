@@ -44,7 +44,7 @@ public actor TidalAPIWorker {
     /// - Returns: array of TidalTrack
     ///
     public func getTracksForArtist(withID artistID: String,
-                                   countryCode: String = "US") async throws -> [TidalTrack] {
+                                   countryCode: String = "US") async throws -> TidalArtistTracks {
         // First check TIDAL authorization...
         guard try await checkAuth(),
               let accessToken else {
@@ -56,17 +56,17 @@ public actor TidalAPIWorker {
             throw TidalAPIError.invalidInput(artistID)
         }
         // Now make API request...
-        let endpoint = TidalAPIEndpoints.artistsTracks(withID: trimmedID,
-                                                       accessToken: accessToken,
-                                                       countryCode: countryCode)
+        let endpoint = TidalAPIEndpoints.artistTracks(withID: trimmedID,
+                                                      accessToken: accessToken,
+                                                      countryCode: countryCode)
         let artistTracks: TidalArtistTracks = try await apiManager.sendRequest(with: endpoint)
 
         guard let tracks = artistTracks.included,
               !tracks.isEmpty else {
             throw TidalAPIError.noItemsFound
         }
-        // Return just the track resources
-        return tracks
+
+        return artistTracks
     }
 
     /// Returns album details for a known TIDAL album ID

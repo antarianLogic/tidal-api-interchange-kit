@@ -1,92 +1,200 @@
 {
-  "data": [
-    {
-      "id": "49794929",
-      "type": "tracks"
+  "data": {
+    "id": "3565255",
+    "type": "artists",
+    "attributes": {
+      "name": "Pixies",
+      "popularity": 0.8350428342819214,
+      "externalLinks": [
+        {
+          "href": "https://facebook.com/Pixies",
+          "meta": {
+            "type": "FACEBOOK"
+          }
+        },
+        {
+          "href": "https://instagram.com/pixiesofficial",
+          "meta": {
+            "type": "INSTAGRAM"
+          }
+        },
+        {
+          "href": "https://pixiesmusic.com",
+          "meta": {
+            "type": "OFFICIAL_HOMEPAGE"
+          }
+        },
+        {
+          "href": "https://tiktok.com/@pixiesmusic",
+          "meta": {
+            "type": "TIKTOK"
+          }
+        },
+        {
+          "href": "https://twitter.com/PIXIES",
+          "meta": {
+            "type": "TWITTER"
+          }
+        },
+        {
+          "href": "https://tidal.com/browse/artist/3565255",
+          "meta": {
+            "type": "TIDAL_SHARING"
+          }
+        }
+      ]
     },
-    {
-      "id": "2211776",
-      "type": "tracks"
-    },
-    {
-      "id": "2211780",
-      "type": "tracks"
-    },
-    {
-      "id": "2211777",
-      "type": "tracks"
-    },
-    {
-      "id": "2211781",
-      "type": "tracks"
-    },
-    {
-      "id": "2211783",
-      "type": "tracks"
-    },
-    {
-      "id": "2211775",
-      "type": "tracks"
-    },
-    {
-      "id": "49794927",
-      "type": "tracks"
-    },
-    {
-      "id": "247859598",
-      "type": "tracks"
-    },
-    {
-      "id": "2211779",
-      "type": "tracks"
-    },
-    {
-      "id": "49794923",
-      "type": "tracks"
-    },
-    {
-      "id": "2211787",
-      "type": "tracks"
-    },
-    {
-      "id": "2211774",
-      "type": "tracks"
-    },
-    {
-      "id": "2211784",
-      "type": "tracks"
-    },
-    {
-      "id": "2203300",
-      "type": "tracks"
-    },
-    {
-      "id": "49708355",
-      "type": "tracks"
-    },
-    {
-      "id": "49708352",
-      "type": "tracks"
-    },
-    {
-      "id": "49708353",
-      "type": "tracks"
-    },
-    {
-      "id": "2211773",
-      "type": "tracks"
-    },
-    {
-      "id": "2211785",
-      "type": "tracks"
+    "relationships": {
+      "similarArtists": {
+        "links": {
+          "self": "/artists/3565255/relationships/similarArtists?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "albums": {
+        "links": {
+          "self": "/artists/3565255/relationships/albums?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "followers": {
+        "links": {
+          "self": "/artists/3565255/relationships/followers?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "following": {
+        "links": {
+          "self": "/artists/3565255/relationships/following?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "roles": {
+        "links": {
+          "self": "/artists/3565255/relationships/roles?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "videos": {
+        "links": {
+          "self": "/artists/3565255/relationships/videos?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "owners": {
+        "links": {
+          "self": "/artists/3565255/relationships/owners?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "biography": {
+        "links": {
+          "self": "/artists/3565255/relationships/biography?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "profileArt": {
+        "links": {
+          "self": "/artists/3565255/relationships/profileArt?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "trackProviders": {
+        "links": {
+          "self": "/artists/3565255/relationships/trackProviders?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      },
+      "tracks": {
+        "data": [
+          {
+            "id": "49794929",
+            "type": "tracks"
+          },
+          {
+            "id": "2211776",
+            "type": "tracks"
+          },
+          {
+            "id": "2211780",
+            "type": "tracks"
+          },
+          {
+            "id": "2211777",
+            "type": "tracks"
+          },
+          {
+            "id": "2211781",
+            "type": "tracks"
+          },
+          {
+            "id": "2211783",
+            "type": "tracks"
+          },
+          {
+            "id": "2211775",
+            "type": "tracks"
+          },
+          {
+            "id": "49794927",
+            "type": "tracks"
+          },
+          {
+            "id": "247859598",
+            "type": "tracks"
+          },
+          {
+            "id": "2211779",
+            "type": "tracks"
+          },
+          {
+            "id": "49794923",
+            "type": "tracks"
+          },
+          {
+            "id": "2211787",
+            "type": "tracks"
+          },
+          {
+            "id": "2211774",
+            "type": "tracks"
+          },
+          {
+            "id": "2211784",
+            "type": "tracks"
+          },
+          {
+            "id": "2203300",
+            "type": "tracks"
+          },
+          {
+            "id": "49708355",
+            "type": "tracks"
+          },
+          {
+            "id": "49708352",
+            "type": "tracks"
+          },
+          {
+            "id": "49708353",
+            "type": "tracks"
+          },
+          {
+            "id": "2211773",
+            "type": "tracks"
+          },
+          {
+            "id": "2211785",
+            "type": "tracks"
+          }
+        ],
+        "links": {
+          "self": "/artists/3565255/relationships/tracks?countryCode=US&collapseBy=FINGERPRINT",
+          "next": "/artists/3565255/relationships/tracks?countryCode=US&collapseBy=FINGERPRINT&page%5Bcursor%5D=3nI1Esi",
+          "meta": {
+            "nextCursor": "3nI1Esi"
+          }
+        }
+      },
+      "radio": {
+        "links": {
+          "self": "/artists/3565255/relationships/radio?countryCode=US&collapseBy=FINGERPRINT"
+        }
+      }
     }
-  ],
+  },
   "links": {
-    "self": "/artists/3565255/relationships/tracks?include=tracks&countryCode=US&collapseBy=FINGERPRINT",
-    "next": "/artists/3565255/relationships/tracks?include=tracks&countryCode=US&collapseBy=FINGERPRINT&page%5Bcursor%5D=3nI1Esi",
-    "meta": {
-      "nextCursor": "3nI1Esi"
-    }
+    "self": "/artists/3565255?include=tracks&countryCode=US&collapseBy=FINGERPRINT"
   },
   "included": [
     {
@@ -122,11 +230,6 @@
         "createdAt": "2009-01-19T17:20:36Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2203300/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2203300/relationships/albums?countryCode=US"
@@ -177,29 +280,14 @@
             "self": "/tracks/2203300/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2203300/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2203300/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2203300/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2203300/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2203300/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -242,11 +330,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211773/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211773/relationships/albums?countryCode=US"
@@ -297,29 +380,14 @@
             "self": "/tracks/2211773/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211773/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211773/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211773/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211773/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211773/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -362,11 +430,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211774/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211774/relationships/albums?countryCode=US"
@@ -417,29 +480,14 @@
             "self": "/tracks/2211774/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211774/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211774/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211774/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211774/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211774/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -482,11 +530,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211775/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211775/relationships/albums?countryCode=US"
@@ -537,29 +580,14 @@
             "self": "/tracks/2211775/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211775/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211775/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211775/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211775/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211775/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -602,11 +630,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211776/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211776/relationships/albums?countryCode=US"
@@ -657,29 +680,14 @@
             "self": "/tracks/2211776/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211776/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211776/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211776/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211776/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211776/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -722,11 +730,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211777/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211777/relationships/albums?countryCode=US"
@@ -777,29 +780,14 @@
             "self": "/tracks/2211777/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211777/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211777/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211777/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211777/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211777/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -842,11 +830,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211779/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211779/relationships/albums?countryCode=US"
@@ -897,29 +880,14 @@
             "self": "/tracks/2211779/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211779/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211779/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211779/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211779/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211779/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -962,11 +930,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211780/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211780/relationships/albums?countryCode=US"
@@ -1017,29 +980,14 @@
             "self": "/tracks/2211780/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211780/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211780/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211780/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211780/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211780/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -1082,11 +1030,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211781/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211781/relationships/albums?countryCode=US"
@@ -1137,29 +1080,14 @@
             "self": "/tracks/2211781/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211781/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211781/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211781/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211781/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211781/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -1202,11 +1130,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211783/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211783/relationships/albums?countryCode=US"
@@ -1257,29 +1180,14 @@
             "self": "/tracks/2211783/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211783/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211783/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211783/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211783/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211783/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -1322,11 +1230,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211784/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211784/relationships/albums?countryCode=US"
@@ -1377,29 +1280,14 @@
             "self": "/tracks/2211784/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211784/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211784/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211784/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211784/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211784/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -1442,11 +1330,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211785/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211785/relationships/albums?countryCode=US"
@@ -1497,29 +1380,14 @@
             "self": "/tracks/2211785/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211785/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211785/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211785/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211785/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211785/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -1562,11 +1430,6 @@
         "createdAt": "2009-01-21T08:49:35Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/2211787/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/2211787/relationships/albums?countryCode=US"
@@ -1617,29 +1480,14 @@
             "self": "/tracks/2211787/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/2211787/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/2211787/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/2211787/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/2211787/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/2211787/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -1683,11 +1531,6 @@
         "createdAt": "2022-09-10T16:45:16Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/247859598/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/247859598/relationships/albums?countryCode=US"
@@ -1738,29 +1581,14 @@
             "self": "/tracks/247859598/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/247859598/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/247859598/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/247859598/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/247859598/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/247859598/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -1803,11 +1631,6 @@
         "createdAt": "2015-08-02T08:20:25Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/49708352/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/49708352/relationships/albums?countryCode=US"
@@ -1858,29 +1681,14 @@
             "self": "/tracks/49708352/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/49708352/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/49708352/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/49708352/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/49708352/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/49708352/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -1923,11 +1731,6 @@
         "createdAt": "2015-08-02T08:20:25Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/49708353/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/49708353/relationships/albums?countryCode=US"
@@ -1978,29 +1781,14 @@
             "self": "/tracks/49708353/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/49708353/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/49708353/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/49708353/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/49708353/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/49708353/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -2043,11 +1831,6 @@
         "createdAt": "2015-08-02T08:20:25Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/49708355/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/49708355/relationships/albums?countryCode=US"
@@ -2098,29 +1881,14 @@
             "self": "/tracks/49708355/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/49708355/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/49708355/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/49708355/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/49708355/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/49708355/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -2163,11 +1931,6 @@
         "createdAt": "2015-08-06T08:49:34Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/49794923/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/49794923/relationships/albums?countryCode=US"
@@ -2218,29 +1981,14 @@
             "self": "/tracks/49794923/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/49794923/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/49794923/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/49794923/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/49794923/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/49794923/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -2283,11 +2031,6 @@
         "createdAt": "2015-08-06T08:49:34Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/49794927/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/49794927/relationships/albums?countryCode=US"
@@ -2338,29 +2081,14 @@
             "self": "/tracks/49794927/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/49794927/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/49794927/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/49794927/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/49794927/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/49794927/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
@@ -2403,11 +2131,6 @@
         "createdAt": "2015-08-06T08:49:34Z"
       },
       "relationships": {
-        "suggestedTracks": {
-          "links": {
-            "self": "/tracks/49794929/relationships/suggestedTracks?countryCode=US"
-          }
-        },
         "albums": {
           "links": {
             "self": "/tracks/49794929/relationships/albums?countryCode=US"
@@ -2458,29 +2181,14 @@
             "self": "/tracks/49794929/relationships/providers?countryCode=US"
           }
         },
-        "usageRules": {
-          "links": {
-            "self": "/tracks/49794929/relationships/usageRules?countryCode=US"
-          }
-        },
         "trackStatistics": {
           "links": {
             "self": "/tracks/49794929/relationships/trackStatistics?countryCode=US"
           }
         },
-        "priceConfig": {
-          "links": {
-            "self": "/tracks/49794929/relationships/priceConfig?countryCode=US"
-          }
-        },
         "sourceFile": {
           "links": {
             "self": "/tracks/49794929/relationships/sourceFile?countryCode=US"
-          }
-        },
-        "replacement": {
-          "links": {
-            "self": "/tracks/49794929/relationships/replacement?countryCode=US"
           }
         },
         "metadataStatus": {
