@@ -9,8 +9,8 @@
 import Foundation
 import TidalAPIInterchangeKit
 
-public extension TidalAlbumSearchResults {
+public extension TidalSearchResults {
     enum Presets {
-        public static let chromatica = JSONDecoder().decode(TidalAlbumSearchResults.self, fromResource: "JSON/AlbumSearchResultsChromaticaByLadyGaga", inBundle: Bundle.module)!
+        public static let chromatica = JSONDecoder().decode(TidalSearchResults.self, fromResource: "JSON/AlbumSearchResultsChromaticaByLadyGaga", inBundle: Bundle.module)!
     }
 }

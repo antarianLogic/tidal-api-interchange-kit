@@ -175,7 +175,7 @@ public enum TidalAPIEndpoints {
     ///
     /// ## Usage
     ///
-    /// Use this endpoint with the ``TidalAPIEndpoints.baseURL`` to search the TIDAL catalog with ``InterchangeManager``'s ``sendRequest(with: endpoint)``, setting the result type to the ``TidalAlbumSearchResults`` model type.
+    /// Use this endpoint with the ``TidalAPIEndpoints.baseURL`` to search the TIDAL catalog with ``InterchangeManager``'s ``sendRequest(with: endpoint)``, setting the result type to the ``TidalSearchResults`` model type.
     /// For example:
     ///
     /// ```swift
@@ -186,7 +186,7 @@ public enum TidalAPIEndpoints {
     ///                                         type: .artists,
     ///                                         accessToken: accessToken)
     /// do {
-    ///     let searchResults: TidalAlbumSearchResults = try await apiManager.sendRequest(with: endpoint)
+    ///     let searchResults: TidalSearchResults = try await apiManager.sendRequest(with: endpoint)
     ///
     ///     guard let artist = searchResults.artists?.items.first else {
     ///         print("Error: received value but albums is either missing or empty")

@@ -190,7 +190,7 @@ public actor TidalAPIWorker {
         let endpoint = TidalAPIEndpoints.search(withQuery: queryString,
                                                 type: .albums,
                                                 accessToken: accessToken)
-        let searchResults: TidalAlbumSearchResults = try await apiManager.sendRequest(with: endpoint)
+        let searchResults: TidalSearchResults = try await apiManager.sendRequest(with: endpoint)
 
         guard !searchResults.albums.isEmpty else {
             throw TidalAPIError.noItemsFound

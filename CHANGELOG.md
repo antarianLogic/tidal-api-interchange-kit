@@ -11,12 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `TidalArtistAttributes`
 
 ### Changed
-- TidalAPIEndpoints: `getAlbums(withUPC: String...` changed to `getAlbums(withUPCs albumUPCs: [String]...`
-- TidalAPIEndpoints: `artistsTracks(withID:...` changed to `artistTracks(withID...`
-- TidalAPIWorker: `getTracksForArtist` now returns `TidalArtistTracks`
-- TidalAPIWorker: `getAlbum(withID:...` now returns tracks and artwork
-- `TidalResource` changed to `TidalArtist`
+- `TidalAPIEndpoints`: `getAlbums(withUPC: String...` changed to `getAlbums(withUPCs albumUPCs: [String]...`
+- `TidalAPIEndpoints`: `artistsTracks(withID:...` changed to `artistTracks(withID...`
+- `TidalAPIWorker`: `getTracksForArtist` now returns `TidalArtistTracks`
+- `TidalAPIWorker`: `getAlbum(withID:...` now returns tracks and artwork
+- `TidalResource` to `TidalArtist`
 - `TidalArtistTracks`
+- `TidalAlbumSearchResults` to `TidalSearchResults`
 
 ### Deprecated
 TBD

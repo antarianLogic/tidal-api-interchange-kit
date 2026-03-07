@@ -70,7 +70,7 @@ Current TIDAL API endpoints (`https://openapi.tidal.com/v2/...`) supported are:
 | /albums/{id}           | `getAlbum`                 | `TidalAlbumResource`      | `getAlbum`              | `TidalAlbumResource`         |
 | /albums                | `getAlbums`                | `TidalAlbumsResource`     | `getAlbums`             | `[TidalAlbum]`               |
 | /tracks/{id}           | `getTrack`                 | `TidalTrackResource`      | `getTrack`              | `TidalTrack`                 |
-| /searchResults/{query} | `search`                   | `TidalAlbumSearchResults` | `searchAlbums`          | `[TidalAlbum]`               |
+| /searchResults/{query} | `search`                   | `TidalSearchResults`      | `searchAlbums`, TBD ... | `[TidalAlbum]`, TBD ...      |
 
 ## Future Development
 
@@ -317,7 +317,7 @@ If the above code was used, `checkAuth()` would then be called and checked befor
                                             accessToken: accessToken)
     // Now make actual network call (in async context)...
     do {
-        let searchResults: TidalAlbumSearchResults = try await apiManager.sendRequest(with: endpoint)
+        let searchResults: TidalSearchResults = try await apiManager.sendRequest(with: endpoint)
 
         print("Albums: \(searchResults.albums)")
     } catch {

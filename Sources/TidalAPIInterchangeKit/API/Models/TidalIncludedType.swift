@@ -13,8 +13,11 @@ import Foundation
 public enum TidalIncludedType: Codable, Equatable, Hashable, Sendable {
 
     case albums(TidalAlbum)
+    case artists(TidalArtist)
     case artworks(TidalArtwork)
+    case playlists(TidalPlaylist)
     case tracks(TidalTrack)
+    case videos(TidalVideo)
 
     enum CodingKeys: CodingKey {
         case type
@@ -26,10 +29,16 @@ public enum TidalIncludedType: Codable, Equatable, Hashable, Sendable {
         switch type {
         case "albums":
             self = .albums(try TidalAlbum(from: decoder))
+        case "artists":
+            self = .artists(try TidalArtist(from: decoder))
         case "artworks":
             self = .artworks(try TidalArtwork(from: decoder))
+        case "playlists":
+            self = .playlists(try TidalPlaylist(from: decoder))
         case "tracks":
             self = .tracks(try TidalTrack(from: decoder))
+        case "videos":
+            self = .videos(try TidalVideo(from: decoder))
         default:
             throw DecodingError.dataCorruptedError(forKey: .type, in: container, debugDescription: "expected `albums`, 'artworks', or 'tracks', got \(type) instead")
         }
@@ -39,9 +48,15 @@ public enum TidalIncludedType: Codable, Equatable, Hashable, Sendable {
         switch self {
         case let .albums(value):
             try value.encode(to: encoder)
+        case let .artists(value):
+            try value.encode(to: encoder)
         case let .artworks(value):
             try value.encode(to: encoder)
+        case let .playlists(value):
+            try value.encode(to: encoder)
         case let .tracks(value):
+            try value.encode(to: encoder)
+        case let .videos(value):
             try value.encode(to: encoder)
         }
     }

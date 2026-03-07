@@ -226,7 +226,7 @@ struct TidalAPIWorkerTests {
         let mockAuthManager = MockInterchangeManager()
         await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
         let mockAPIManager = MockInterchangeManager()
-        await mockAPIManager.pushMockData(TidalAlbumSearchResults.Presets.chromatica)
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.chromatica)
         let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
                                  clientSecret: "FAKE_CLIENT_SECRET",
                                  alternateAuthManager: mockAuthManager,
@@ -250,7 +250,7 @@ struct TidalAPIWorkerTests {
         let mockAuthManager = MockInterchangeManager()
         await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
         let mockAPIManager = MockInterchangeManager()
-        await mockAPIManager.pushMockData(TidalAlbumSearchResults.Presets.chromatica)
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.chromatica)
         let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
                                  clientSecret: "FAKE_CLIENT_SECRET",
                                  alternateAuthManager: mockAuthManager,
