@@ -69,15 +69,15 @@ public actor TidalAPIWorker {
         return artistTracks
     }
 
-    /// Returns album details for a known TIDAL album ID
+    /// Returns album details including tracks and artwork for a known TIDAL album ID
     ///
     /// - Parameters:
     ///   - withID: TIDAL album ID string
     ///   - countryCode: Country code string. Defaults to "US".
-    /// - Returns: TidalAlbum
+    /// - Returns: TidalAlbumResource
     ///
     public func getAlbum(withID albumID: String,
-                         countryCode: String = "US") async throws -> TidalAlbum {
+                         countryCode: String = "US") async throws -> TidalAlbumResource {
         // First check TIDAL authorization...
         guard try await checkAuth(),
               let accessToken else {
@@ -94,7 +94,7 @@ public actor TidalAPIWorker {
                                                   countryCode: countryCode)
         let albumRes: TidalAlbumResource = try await apiManager.sendRequest(with: endpoint)
 
-        return albumRes.data
+        return albumRes
     }
 
     /// Retrieves the TIDAL catalog for albums with known UPC codes

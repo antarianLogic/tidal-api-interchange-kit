@@ -88,9 +88,31 @@ struct TidalAPIWorkerTests {
                                  alternateAuthManager: mockAuthManager,
                                  alternateAPIManager: mockAPIManager)
         let album = try await sut.getAlbum(withID: id)
-        #expect(album.id == "77610756")
-        let attributes = try #require(album.attributes)
+        #expect(album.data.id == "77610756")
+        let attributes = try #require(album.data.attributes)
         #expect(attributes.title == "Nevermind")
+        let included = try #require(album.included)
+        #expect(included.count == 15)
+        let tracks = album.tracks
+        #expect(tracks.count == 13)
+        let firstTrack = try #require(tracks.first)
+        #expect(firstTrack.id == "77610757")
+        #expect(firstTrack.attributes?.title == "Smells Like Teen Spirit")
+        let lastTrack = try #require(tracks.last)
+        #expect(lastTrack.id == "77610770")
+        #expect(lastTrack.attributes?.title == "Endless, Nameless")
+        let images = album.images
+        #expect(images.count == 1)
+        let firstImage = try #require(images.first)
+        #expect(firstImage.attributes?.mediaType == "IMAGE")
+        #expect(firstImage.id == "iWOu0yW0IPWzeVetoYT8")
+        #expect(firstImage.attributes?.files.count == 7)
+        let videos = album.videos
+        #expect(videos.count == 1)
+        let firstVideo = try #require(videos.first)
+        #expect(firstVideo.attributes?.mediaType == "VIDEO")
+        #expect(firstVideo.id == "iWOu6CXPguy46trJdwsY")
+        #expect(firstVideo.attributes?.files.count == 7)
     }
 
     @Test("Failing get album with TIDAL ID",
@@ -273,10 +295,10 @@ struct TidalAPIWorkerTests {
                                  alternateAPIManager: mockAPIManager)
         // first call should work since the first token in the mock data stack is not quite expired yet
         let album1 = try await sut.getAlbum(withID: "77610756")
-        #expect(album1.id == "77610756")
+        #expect(album1.data.id == "77610756")
         // make another call right away and it should work too as the token should still be good
         let album2 = try await sut.getAlbum(withID: "77610756")
-        #expect(album2.id == "77610756")
+        #expect(album2.data.id == "77610756")
         // this time, wait just over a second so old token will expire and need to be refreshed while the new one in
         // the mock data stack is invalid so now it should fail
         try await Task.sleep(nanoseconds: 1_100_000_000)
@@ -288,6 +310,6 @@ struct TidalAPIWorkerTests {
         }
         // now make a fourth call which should work since the final token in the mock data stack is good
         let album3 = try await sut.getAlbum(withID: "77610756")
-        #expect(album3.id == "77610756")
+        #expect(album3.data.id == "77610756")
     }
 }

@@ -39,7 +39,7 @@ struct TidalAPIEndpointsTests {
         #expect(endpoint.path == "/albums/fake_id")
         #expect(endpoint.headers == ["Authorization" : "Bearer fake_token",
                                      "Accept": "application/vnd.api+json"])
-        #expect(endpoint.queryParameters.count == 1)
+        #expect(endpoint.queryParameters.count == 2)
         #expect(endpoint.queryParameters[0].name == "countryCode")
         #expect(endpoint.queryParameters[0].value == "US")
         #expect(endpoint.body == nil)

@@ -35,11 +35,6 @@
       "albumType": "ALBUM"
     },
     "relationships": {
-      "usageRules": {
-        "links": {
-          "self": "/albums/77610756/relationships/usageRules?countryCode=US"
-        }
-      },
       "similarAlbums": {
         "links": {
           "self": "/albums/77610756/relationships/similarAlbums?countryCode=US"
@@ -60,29 +55,135 @@
           "self": "/albums/77610756/relationships/suggestedCoverArts?countryCode=US"
         }
       },
-      "priceConfig": {
-        "links": {
-          "self": "/albums/77610756/relationships/priceConfig?countryCode=US"
-        }
-      },
       "owners": {
         "links": {
           "self": "/albums/77610756/relationships/owners?countryCode=US"
         }
       },
       "coverArt": {
+        "data": [
+          {
+            "id": "iWOu0yW0IPWzeVetoYT8",
+            "type": "artworks"
+          },
+          {
+            "id": "iWOu6CXPguy46trJdwsY",
+            "type": "artworks"
+          }
+        ],
         "links": {
           "self": "/albums/77610756/relationships/coverArt?countryCode=US"
         }
       },
       "items": {
+        "data": [
+          {
+            "id": "77610757",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 1
+            }
+          },
+          {
+            "id": "77610758",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 2
+            }
+          },
+          {
+            "id": "77610759",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 3
+            }
+          },
+          {
+            "id": "77610760",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 4
+            }
+          },
+          {
+            "id": "77610761",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 5
+            }
+          },
+          {
+            "id": "77610762",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 6
+            }
+          },
+          {
+            "id": "77610763",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 7
+            }
+          },
+          {
+            "id": "77610765",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 8
+            }
+          },
+          {
+            "id": "77610766",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 9
+            }
+          },
+          {
+            "id": "77610767",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 10
+            }
+          },
+          {
+            "id": "77610768",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 11
+            }
+          },
+          {
+            "id": "77610769",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 12
+            }
+          },
+          {
+            "id": "77610770",
+            "type": "tracks",
+            "meta": {
+              "volumeNumber": 1,
+              "trackNumber": 13
+            }
+          }
+        ],
         "links": {
           "self": "/albums/77610756/relationships/items?countryCode=US"
-        }
-      },
-      "replacement": {
-        "links": {
-          "self": "/albums/77610756/relationships/replacement?countryCode=US"
         }
       },
       "providers": {
@@ -93,6 +194,1459 @@
     }
   },
   "links": {
-    "self": "/albums/77610756?countryCode=US"
-  }
+    "self": "/albums/77610756?include=coverArt%2Citems&countryCode=US"
+  },
+  "included": [
+    {
+      "id": "iWOu0yW0IPWzeVetoYT8",
+      "type": "artworks",
+      "attributes": {
+        "mediaType": "IMAGE",
+        "files": [
+          {
+            "href": "https://resources.tidal.com/images/4e4aec29/deff/466e/9ea1/c47916d5960b/1280x1280.jpg",
+            "meta": {
+              "width": 1280,
+              "height": 1280
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/4e4aec29/deff/466e/9ea1/c47916d5960b/1080x1080.jpg",
+            "meta": {
+              "width": 1080,
+              "height": 1080
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/4e4aec29/deff/466e/9ea1/c47916d5960b/750x750.jpg",
+            "meta": {
+              "width": 750,
+              "height": 750
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/4e4aec29/deff/466e/9ea1/c47916d5960b/640x640.jpg",
+            "meta": {
+              "width": 640,
+              "height": 640
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/4e4aec29/deff/466e/9ea1/c47916d5960b/320x320.jpg",
+            "meta": {
+              "width": 320,
+              "height": 320
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/4e4aec29/deff/466e/9ea1/c47916d5960b/160x160.jpg",
+            "meta": {
+              "width": 160,
+              "height": 160
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/4e4aec29/deff/466e/9ea1/c47916d5960b/80x80.jpg",
+            "meta": {
+              "width": 80,
+              "height": 80
+            }
+          }
+        ],
+        "visualMetadata": {
+          "selectedPaletteColor": "#2C6676",
+          "blurHash": "UJ3.rFaIT1g4ueaibvk8TKjEnzjXT2j@i_ae",
+          "status": "OK"
+        }
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/artworks/iWOu0yW0IPWzeVetoYT8/relationships/owners?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "iWOu6CXPguy46trJdwsY",
+      "type": "artworks",
+      "attributes": {
+        "mediaType": "VIDEO",
+        "files": [
+          {
+            "href": "https://resources.tidal.com/videos/e942db03/2afc/45f5/be49/dfe017b57a1a/1280x1280.mp4",
+            "meta": {
+              "width": 1280,
+              "height": 1280
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/videos/e942db03/2afc/45f5/be49/dfe017b57a1a/1080x1080.mp4",
+            "meta": {
+              "width": 1080,
+              "height": 1080
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/videos/e942db03/2afc/45f5/be49/dfe017b57a1a/750x750.mp4",
+            "meta": {
+              "width": 750,
+              "height": 750
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/videos/e942db03/2afc/45f5/be49/dfe017b57a1a/640x640.mp4",
+            "meta": {
+              "width": 640,
+              "height": 640
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/videos/e942db03/2afc/45f5/be49/dfe017b57a1a/320x320.mp4",
+            "meta": {
+              "width": 320,
+              "height": 320
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/videos/e942db03/2afc/45f5/be49/dfe017b57a1a/160x160.mp4",
+            "meta": {
+              "width": 160,
+              "height": 160
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/videos/e942db03/2afc/45f5/be49/dfe017b57a1a/80x80.mp4",
+            "meta": {
+              "width": 80,
+              "height": 80
+            }
+          }
+        ],
+        "visualMetadata": {
+          "status": "PROCESSING"
+        }
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/artworks/iWOu6CXPguy46trJdwsY/relationships/owners?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610757",
+      "type": "tracks",
+      "attributes": {
+        "title": "Smells Like Teen Spirit",
+        "version": null,
+        "isrc": "USGF19942501",
+        "duration": "PT5M1S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.8997641890671554,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610757",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610757/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610757/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610757/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610757/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610757/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610757/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610757/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610757/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610757/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610757/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610757/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610757/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610757/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610758",
+      "type": "tracks",
+      "attributes": {
+        "title": "In Bloom",
+        "version": null,
+        "isrc": "USGF19942502",
+        "duration": "PT4M15S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.7948723708597456,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610758",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610758/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610758/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610758/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610758/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610758/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610758/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610758/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610758/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610758/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610758/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610758/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610758/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610758/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610759",
+      "type": "tracks",
+      "attributes": {
+        "title": "Come As You Are",
+        "version": null,
+        "isrc": "USGF19942503",
+        "duration": "PT3M39S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.8630085124605267,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610759",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610759/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610759/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610759/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610759/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610759/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610759/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610759/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610759/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610759/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610759/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610759/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610759/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610759/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610760",
+      "type": "tracks",
+      "attributes": {
+        "title": "Breed",
+        "version": null,
+        "isrc": "USGF19942504",
+        "duration": "PT3M4S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.7518442557719927,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610760",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610760/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610760/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610760/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610760/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610760/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610760/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610760/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610760/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610760/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610760/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610760/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610760/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610760/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610761",
+      "type": "tracks",
+      "attributes": {
+        "title": "Lithium",
+        "version": null,
+        "isrc": "USGF19942505",
+        "duration": "PT4M17S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.833304149014174,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610761",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610761/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610761/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610761/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610761/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610761/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610761/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610761/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610761/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610761/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610761/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610761/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610761/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610761/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610762",
+      "type": "tracks",
+      "attributes": {
+        "title": "Polly",
+        "version": null,
+        "isrc": "USGF19942506",
+        "duration": "PT2M57S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.7291755672852548,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610762",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610762/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610762/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610762/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610762/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610762/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610762/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610762/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610762/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610762/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610762/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610762/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610762/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610762/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610763",
+      "type": "tracks",
+      "attributes": {
+        "title": "Territorial Pissings",
+        "version": null,
+        "isrc": "USGF19942507",
+        "duration": "PT2M23S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.7135682049425969,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610763",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610763/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610763/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610763/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610763/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610763/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610763/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610763/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610763/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610763/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610763/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610763/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610763/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610763/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610765",
+      "type": "tracks",
+      "attributes": {
+        "title": "Drain You",
+        "version": null,
+        "isrc": "USGF19942508",
+        "duration": "PT3M44S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.7624191369996157,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610765",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610765/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610765/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610765/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610765/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610765/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610765/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610765/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610765/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610765/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610765/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610765/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610765/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610765/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610766",
+      "type": "tracks",
+      "attributes": {
+        "title": "Lounge Act",
+        "version": null,
+        "isrc": "USGF19942509",
+        "duration": "PT2M37S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": true,
+        "popularity": 0.7322652251520256,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610766",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610766/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610766/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610766/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610766/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610766/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610766/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610766/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610766/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610766/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610766/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610766/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610766/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610766/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610767",
+      "type": "tracks",
+      "attributes": {
+        "title": "Stay Away",
+        "version": null,
+        "isrc": "USGF19942510",
+        "duration": "PT3M32S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.700592952441831,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610767",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610767/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610767/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610767/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610767/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610767/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610767/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610767/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610767/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610767/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610767/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610767/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610767/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610767/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610768",
+      "type": "tracks",
+      "attributes": {
+        "title": "On A Plain",
+        "version": null,
+        "isrc": "USGF19942511",
+        "duration": "PT3M16S",
+        "copyright": {
+          "text": "℗ 1991 UMG Recordings, Inc."
+        },
+        "explicit": false,
+        "popularity": 0.7159848756424796,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610768",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610768/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610768/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610768/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610768/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610768/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610768/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610768/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610768/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610768/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610768/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610768/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610768/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610768/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610769",
+      "type": "tracks",
+      "attributes": {
+        "title": "Something In The Way",
+        "version": null,
+        "isrc": "USGF19942512",
+        "duration": "PT3M55S",
+        "copyright": {
+          "text": "℗ 1991 Geffen Records"
+        },
+        "explicit": false,
+        "popularity": 0.8010167177474877,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610769",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610769/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610769/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610769/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610769/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610769/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610769/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610769/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610769/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610769/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610769/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610769/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610769/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610769/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "77610770",
+      "type": "tracks",
+      "attributes": {
+        "title": "Endless, Nameless",
+        "version": null,
+        "isrc": "USGF19942513",
+        "duration": "PT6M43S",
+        "copyright": {
+          "text": "℗ 1991 Geffen Records"
+        },
+        "explicit": false,
+        "popularity": 0.6615413017609586,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/77610770",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2017-08-18T17:35:19Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/77610770/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/77610770/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/77610770/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/77610770/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/77610770/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/77610770/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/77610770/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/77610770/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/77610770/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/77610770/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/77610770/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/77610770/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/77610770/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    }
+  ]
 }

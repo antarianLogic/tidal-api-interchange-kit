@@ -16,7 +16,7 @@ public struct TidalAlbum: Codable, Equatable, Hashable, Sendable {
 
     public let id: String
 
-    // Not including the relationships property for now as it is quite nested and I'm not sure we actually need it.
+    // Not including the relationships property for now
     // public let relationships: ...
 
     public let type: String

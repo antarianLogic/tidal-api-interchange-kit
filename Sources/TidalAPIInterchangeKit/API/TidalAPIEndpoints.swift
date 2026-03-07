@@ -90,7 +90,8 @@ public enum TidalAPIEndpoints {
                                 countryCode: String = "US") -> RESTEndpoint {
         return RESTEndpoint(path: "/albums/\(id)",
                             headers: headers(withAccessToken: accessToken),
-                            queryParameters: [URLQueryItem(name: "countryCode", value: countryCode)])
+                            queryParameters: [URLQueryItem(name: "countryCode", value: countryCode),
+                                              URLQueryItem(name: "include", value: "coverArt,items")])
     }
 
     /// Creates an endpoint suitable to return album details for a list of known album UPCs

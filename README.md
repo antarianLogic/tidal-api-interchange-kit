@@ -67,7 +67,7 @@ Current TIDAL API endpoints (`https://openapi.tidal.com/v2/...`) supported are:
 | Path                   | `TidalAPIEndpoints` Method | `sendRequest` Return Type | `TidalAPIWorker` Method | `TidalAPIWorker` Return Type |
 | ---------------------- | -------------------------- | ------------------------- | ----------------------- | ---------------------------- |
 | /artists/{id}          | `artistTracks`             | `TidalArtistTracks`       | `getTracksForArtist`    | `TidalArtistTracks`          |
-| /albums/{id}           | `getAlbum`                 | `TidalAlbumResource`      | `getAlbum`              | `TidalAlbum`                 |
+| /albums/{id}           | `getAlbum`                 | `TidalAlbumResource`      | `getAlbum`              | `TidalAlbumResource`         |
 | /albums                | `getAlbums`                | `TidalAlbumsResource`     | `getAlbums`             | `[TidalAlbum]`               |
 | /tracks/{id}           | `getTrack`                 | `TidalTrackResource`      | `getTrack`              | `TidalTrack`                 |
 | /searchResults/{query} | `search`                   | `TidalAlbumSearchResults` | `searchAlbums`          | `[TidalAlbum]`               |
