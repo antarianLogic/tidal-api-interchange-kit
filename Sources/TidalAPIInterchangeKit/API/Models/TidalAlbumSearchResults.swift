@@ -15,12 +15,26 @@ public struct TidalAlbumSearchResults: Codable, Equatable, Hashable, Sendable {
     // Not including the data property for now.
     // public let data: TidalAlbum
 
-    public let included: [TidalAlbum]?
+    public let included: [TidalIncludedType]?
 
     // Not including the links property for now. They are either already known or can be generated from known data.
     // public let links: ...
 
-    public init(included: [TidalAlbum]? = nil) {
+    public init(included: [TidalIncludedType]? = nil) {
         self.included = included
+    }
+}
+
+public extension TidalAlbumSearchResults {
+    var albums: [TidalAlbum] {
+        guard let included else { return [] }
+
+        return included.compactMap {
+            if case let .albums(tidalAlbum) = $0 {
+                return tidalAlbum
+            } else {
+                return nil
+            }
+        }
     }
 }

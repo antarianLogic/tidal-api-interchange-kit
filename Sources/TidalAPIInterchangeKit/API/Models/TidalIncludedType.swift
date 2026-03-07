@@ -12,6 +12,7 @@ import Foundation
 
 public enum TidalIncludedType: Codable, Equatable, Hashable, Sendable {
 
+    case albums(TidalAlbum)
     case artworks(TidalArtwork)
     case tracks(TidalTrack)
 
@@ -23,17 +24,21 @@ public enum TidalIncludedType: Codable, Equatable, Hashable, Sendable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let type = try container.decode(String.self, forKey: .type)
         switch type {
+        case "albums":
+            self = .albums(try TidalAlbum(from: decoder))
         case "artworks":
             self = .artworks(try TidalArtwork(from: decoder))
         case "tracks":
             self = .tracks(try TidalTrack(from: decoder))
         default:
-            throw DecodingError.dataCorruptedError(forKey: .type, in: container, debugDescription: "expected 'artworks' or 'tracks', got \(type) instead")
+            throw DecodingError.dataCorruptedError(forKey: .type, in: container, debugDescription: "expected `albums`, 'artworks', or 'tracks', got \(type) instead")
         }
     }
 
     public func encode(to encoder: any Encoder) throws {
         switch self {
+        case let .albums(value):
+            try value.encode(to: encoder)
         case let .artworks(value):
             try value.encode(to: encoder)
         case let .tracks(value):

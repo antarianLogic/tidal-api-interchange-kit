@@ -61,8 +61,7 @@ public actor TidalAPIWorker {
                                                       countryCode: countryCode)
         let artistTracks: TidalArtistTracks = try await apiManager.sendRequest(with: endpoint)
 
-        guard let tracks = artistTracks.included,
-              !tracks.isEmpty else {
+        guard !artistTracks.tracks.isEmpty else {
             throw TidalAPIError.noItemsFound
         }
 
@@ -193,13 +192,12 @@ public actor TidalAPIWorker {
                                                 accessToken: accessToken)
         let searchResults: TidalAlbumSearchResults = try await apiManager.sendRequest(with: endpoint)
 
-        guard let albums = searchResults.included,
-              !albums.isEmpty else {
+        guard !searchResults.albums.isEmpty else {
             throw TidalAPIError.noItemsFound
         }
         // now try search with album names matching exactly (don't strip parentheticals yet)
         let lcAlbumTitle = albumTitle.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        let exactAlbums = albums.filter {
+        let exactAlbums = searchResults.albums.filter {
             guard let thisTitle = $0.attributes?.title else { return false }
             let lcThisAlbumTitle = thisTitle.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
             return lcThisAlbumTitle == lcAlbumTitle
@@ -216,7 +214,7 @@ public actor TidalAPIWorker {
                 titleWithNoParentheticals = String(titleWithNoParenthesis.prefix(upTo: index))
             }
             let lcTitleWithNoParentheticals = titleWithNoParentheticals.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-            matchingAlbums = albums.filter {
+            matchingAlbums = searchResults.albums.filter {
                 guard let thisTitle = $0.attributes?.title else { return false }
                 var thisTitleWithNoParenthesis = thisTitle
                 if let index = thisTitle.firstIndex(of: "(") {

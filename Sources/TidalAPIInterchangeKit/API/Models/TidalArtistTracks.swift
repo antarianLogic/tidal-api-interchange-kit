@@ -14,14 +14,28 @@ public struct TidalArtistTracks: Codable, Equatable, Hashable, Sendable {
 
     public let data: TidalArtist
 
-    public let included: [TidalTrack]?
+    public let included: [TidalIncludedType]?
 
     // Not including the links property for now. They are either already known or can be generated from known data.
     // public let links: ...
 
     public init(data: TidalArtist,
-                included: [TidalTrack]? = nil) {
+                included: [TidalIncludedType]? = nil) {
         self.data = data
         self.included = included
+    }
+}
+
+public extension TidalArtistTracks {
+    var tracks: [TidalTrack] {
+        guard let included else { return [] }
+
+        return included.compactMap {
+            if case let .tracks(tidalTracks) = $0 {
+                return tidalTracks
+            } else {
+                return nil
+            }
+        }
     }
 }

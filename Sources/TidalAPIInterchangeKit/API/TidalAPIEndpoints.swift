@@ -41,9 +41,7 @@ public enum TidalAPIEndpoints {
     /// do {
     ///     let artistTracks: TidalArtistTracks = try await apiManager.sendRequest(with: endpoint)
     ///
-    ///     guard let tracks = artistTracks.included else { return }
-    ///
-    ///     print("TIDAL tracks: \(tracks)")
+    ///     print("TIDAL tracks: \(artistTracks.tracks)")
     /// } catch {
     ///     print("sendRequest error: \(error.localizedDescription)")
     /// }

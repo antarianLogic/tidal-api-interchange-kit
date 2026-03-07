@@ -29,7 +29,9 @@ struct TidalAPIWorkerTests {
         #expect(artistAndTracks.data.id == "3565255")
         let artistAttributes = try #require(artistAndTracks.data.attributes)
         #expect(artistAttributes.name == "Pixies")
-        let tracks = try #require(artistAndTracks.included)
+        let included = try #require(artistAndTracks.included)
+        #expect(included.count == 20)
+        let tracks = artistAndTracks.tracks
         #expect(tracks.count == 20)
         let firstTrack = try #require(tracks.first)
         #expect(firstTrack.id == "2203300")
