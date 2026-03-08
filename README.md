@@ -64,13 +64,18 @@ Current TIDAL Authorization endpoints (`https://auth.tidal.com/v1/...`) supporte
 
 Current TIDAL API endpoints (`https://openapi.tidal.com/v2/...`) supported are:
 
-| Path                   | `TidalAPIEndpoints` Method | `sendRequest` Return Type | `TidalAPIWorker` Method | `TidalAPIWorker` Return Type |
-| ---------------------- | -------------------------- | ------------------------- | ----------------------- | ---------------------------- |
-| /artists/{id}          | `artistTracks`             | `TidalArtistTracks`       | `getTracksForArtist`    | `TidalArtistTracks`          |
-| /albums/{id}           | `getAlbum`                 | `TidalAlbumResource`      | `getAlbum`              | `TidalAlbumResource`         |
-| /albums                | `getAlbums`                | `TidalAlbumsResource`     | `getAlbums`             | `[TidalAlbum]`               |
-| /tracks/{id}           | `getTrack`                 | `TidalTrackResource`      | `getTrack`              | `TidalTrack`                 |
-| /searchResults/{query} | `search`                   | `TidalSearchResults`      | `searchAlbums`, TBD ... | `[TidalAlbum]`, TBD ...      |
+| Path                   | include        | `TidalAPIEndpoints` Method | `sendRequest` Return Type | `TidalAPIWorker` Method | `TidalAPIWorker` Return Type |
+| ---------------------- | -------------- | -------------------------- | ------------------------- | ----------------------- | ---------------------------- |
+| /artists/{id}          | tracks         | `artistTracks`             | `TidalArtistTracks`       | `getTracksForArtist`    | `TidalArtistTracks`          |
+| /albums/{id}           | coverArt,items | `getAlbum`                 | `TidalAlbumResource`      | `getAlbum`              | `TidalAlbumResource`         |
+| /albums                |                | `getAlbums`                | `TidalAlbumsResource`     | `getAlbums`             | `[TidalAlbum]`               |
+| /tracks/{id}           |                | `getTrack`                 | `TidalTrackResource`      | `getTrack`              | `TidalTrack`                 |
+| /searchResults/{query} | albums         | `search`                   | `TidalSearchResults`      | `searchAlbums`          | `[TidalAlbum]`               |
+|           "            | artists        |     "                      |           "               | `searchArtists`         | `[TidalArtist]`              |
+|           "            | playlists      |     "                      |           "               | `searchPlaylists`       | `[TidalPlaylist]`            |
+|           "            | topHits        |     "                      |           "               | `searchTopHits`         | `TidalSearchResults`         |
+|           "            | tracks         |     "                      |           "               | `searchTracks`          | `[TidalTrack]`               |
+|           "            | videos         |     "                      |           "               | `searchVideos`          | `[TidalVideo]`               |
 
 ## Future Development
 

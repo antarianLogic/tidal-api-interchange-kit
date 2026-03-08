@@ -235,6 +235,205 @@ public actor TidalAPIWorker {
         return matchingAlbums
     }
 
+    /// Searches the TIDAL catalog for artists with a known name
+    ///
+    /// - Parameters:
+    ///   - withName: an artist name or portion of
+    /// - Returns: array of TidalArtist
+    ///
+    public func searchArtists(withName name: String) async throws -> [TidalArtist] {
+        // First check TIDAL authorization...
+        guard try await checkAuth(),
+              let accessToken else {
+            throw TidalAuthError.nilAccessToken
+        }
+        // Check for invalid artist name...
+        let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedName.isEmpty else {
+            throw TidalAPIError.invalidInput(name)
+        }
+        // Prepare query string...
+        guard let queryString = trimmedName.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
+            throw TidalAPIError.couldNotEscapeString(trimmedName)
+        }
+        // Now make API request...
+        let endpoint = TidalAPIEndpoints.search(withQuery: queryString,
+                                                type: .artists,
+                                                accessToken: accessToken)
+        let searchResults: TidalSearchResults = try await apiManager.sendRequest(with: endpoint)
+        // now filter out artist names that don't contain our original string
+        let filteredArtists = searchResults.artists.filter {
+            guard let thisName = $0.attributes?.name else { return false }
+
+//          return thisName.localizedCaseInsensitiveContains(trimmedName)
+            return thisName.range(of: trimmedName, options: .caseInsensitive) != nil
+        }
+
+        guard !filteredArtists.isEmpty else {
+            throw TidalAPIError.noItemsFound
+        }
+
+        return filteredArtists
+    }
+
+    /// Searches the TIDAL catalog for playlists with a known name
+    ///
+    /// - Parameters:
+    ///   - withName: an playlists name or portion of
+    /// - Returns: array of TidalTrack
+    ///
+    public func searchPlaylists(withName name: String) async throws -> [TidalPlaylist] {
+        // First check TIDAL authorization...
+        guard try await checkAuth(),
+              let accessToken else {
+            throw TidalAuthError.nilAccessToken
+        }
+        // Check for invalid playlist name...
+        let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedName.isEmpty else {
+            throw TidalAPIError.invalidInput(name)
+        }
+        // Prepare query string...
+        guard let queryString = trimmedName.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
+            throw TidalAPIError.couldNotEscapeString(trimmedName)
+        }
+        // Now make API request...
+        let endpoint = TidalAPIEndpoints.search(withQuery: queryString,
+                                                type: .playlists,
+                                                accessToken: accessToken)
+        let searchResults: TidalSearchResults = try await apiManager.sendRequest(with: endpoint)
+        // now filter out playlist names that don't contain our original string
+        let filteredPlaylists = searchResults.playlists.filter {
+            guard let thisName = $0.attributes?.name else { return false }
+
+//          return thisName.localizedCaseInsensitiveContains(trimmedName)
+            return thisName.range(of: trimmedName, options: .caseInsensitive) != nil
+        }
+
+        guard !filteredPlaylists.isEmpty else {
+            throw TidalAPIError.noItemsFound
+        }
+
+        return filteredPlaylists
+    }
+
+    /// Searches the TIDAL catalog for top search hits with arbitrary search text
+    ///
+    /// - Parameters:
+    ///   - withText: arbitrary search text
+    /// - Returns: TidalSearchResults
+    ///
+    public func searchTopHits(withText text: String) async throws -> TidalSearchResults {
+        // First check TIDAL authorization...
+        guard try await checkAuth(),
+              let accessToken else {
+            throw TidalAuthError.nilAccessToken
+        }
+        // Check for invalid text...
+        let trimmedText = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedText.isEmpty else {
+            throw TidalAPIError.invalidInput(text)
+        }
+        // Prepare query string...
+        guard let queryString = trimmedText.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
+            throw TidalAPIError.couldNotEscapeString(trimmedText)
+        }
+        // Now make API request...
+        let endpoint = TidalAPIEndpoints.search(withQuery: queryString,
+                                                type: .topHits,
+                                                accessToken: accessToken)
+        let searchResults: TidalSearchResults = try await apiManager.sendRequest(with: endpoint)
+
+        guard let included = searchResults.included,
+              !included.isEmpty else {
+            throw TidalAPIError.noItemsFound
+        }
+
+        return searchResults
+    }
+
+    /// Searches the TIDAL catalog for tracks with a known title
+    ///
+    /// - Parameters:
+    ///   - withTitle: an track title or portion of
+    /// - Returns: array of TidalTrack
+    ///
+    public func searchTracks(withTitle title: String) async throws -> [TidalTrack] {
+        // First check TIDAL authorization...
+        guard try await checkAuth(),
+              let accessToken else {
+            throw TidalAuthError.nilAccessToken
+        }
+        // Check for invalid track name...
+        let trimmedTitle = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedTitle.isEmpty else {
+            throw TidalAPIError.invalidInput(title)
+        }
+        // Prepare query string...
+        guard let queryString = trimmedTitle.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
+            throw TidalAPIError.couldNotEscapeString(trimmedTitle)
+        }
+        // Now make API request...
+        let endpoint = TidalAPIEndpoints.search(withQuery: queryString,
+                                                type: .tracks,
+                                                accessToken: accessToken)
+        let searchResults: TidalSearchResults = try await apiManager.sendRequest(with: endpoint)
+        // now filter out track titles that don't contain our original string
+        let filteredTracks = searchResults.tracks.filter {
+            guard let thisTitle = $0.attributes?.title else { return false }
+
+//          return thisTitle.localizedCaseInsensitiveContains(trimmedTitle)
+            return thisTitle.range(of: trimmedTitle, options: .caseInsensitive) != nil
+        }
+
+        guard !filteredTracks.isEmpty else {
+            throw TidalAPIError.noItemsFound
+        }
+
+        return filteredTracks
+    }
+
+    /// Searches the TIDAL catalog for videos with a known title
+    ///
+    /// - Parameters:
+    ///   - withTitle: a video title or portion of
+    /// - Returns: array of TidalVideo
+    ///
+    public func searchVideos(withTitle title: String) async throws -> [TidalVideo] {
+        // First check TIDAL authorization...
+        guard try await checkAuth(),
+              let accessToken else {
+            throw TidalAuthError.nilAccessToken
+        }
+        // Check for invalid video name...
+        let trimmedTitle = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedTitle.isEmpty else {
+            throw TidalAPIError.invalidInput(title)
+        }
+        // Prepare query string...
+        guard let queryString = trimmedTitle.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
+            throw TidalAPIError.couldNotEscapeString(trimmedTitle)
+        }
+        // Now make API request...
+        let endpoint = TidalAPIEndpoints.search(withQuery: queryString,
+                                                type: .videos,
+                                                accessToken: accessToken)
+        let searchResults: TidalSearchResults = try await apiManager.sendRequest(with: endpoint)
+        // now filter out video titles that don't contain our original string
+        let filteredVideos = searchResults.videos.filter {
+            guard let thisTitle = $0.attributes?.title else { return false }
+
+//          return thisTitle.localizedCaseInsensitiveContains(trimmedTitle)
+            return thisTitle.range(of: trimmedTitle, options: .caseInsensitive) != nil
+        }
+
+        guard !filteredVideos.isEmpty else {
+            throw TidalAPIError.noItemsFound
+        }
+
+        return filteredVideos
+    }
+
     private func checkAuth() async throws -> Bool {
         guard accessToken == nil || tokenExpiration.timeIntervalSinceNow < 60 else { return true }
 

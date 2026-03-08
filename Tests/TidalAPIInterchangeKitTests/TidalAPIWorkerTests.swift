@@ -256,8 +256,240 @@ struct TidalAPIWorkerTests {
                                  alternateAuthManager: mockAuthManager,
                                  alternateAPIManager: mockAPIManager)
         let error = await #expect(throws: TidalAPIError.self) { try await sut.searchAlbums(withTitle: title, artistName: artist) }
-        if case let .invalidInput(invalidID) = error {
-            #expect(invalidID == title || invalidID == artist)
+        if case let .invalidInput(invalidText) = error {
+            #expect(invalidText == title || invalidText == artist)
+        } else {
+            Issue.record("Not a TidalAPIError.invalidInput")
+        }
+    }
+
+    @Test("Search artists with name",
+          arguments: [("Bad Bunny"),
+                      ("bad bunny"),
+                      (" bad Bunny")])
+    func searchArtists(name: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.badBunny)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let artists = try await sut.searchArtists(withName: name)
+        #expect(artists.count == 1)
+        let firstArtist = try #require(artists.first)
+        #expect(firstArtist.id == "8027279")
+        let firstArtistAttributes = try #require(firstArtist.attributes)
+        #expect(firstArtistAttributes.name == "Bad Bunny")
+    }
+
+    @Test("Failing search artists with name",
+          arguments: [(""),
+                      (" ")])
+    func failingSearchArtists(name: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.badBunny)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let error = await #expect(throws: TidalAPIError.self) { try await sut.searchArtists(withName: name) }
+        if case let .invalidInput(invalidName) = error {
+            #expect(invalidName == name)
+        } else {
+            Issue.record("Not a TidalAPIError.invalidInput")
+        }
+    }
+
+    @Test("Search playlists with name",
+          arguments: [("Shoegaze"),
+                      ("shoegaze"),
+                      ("  sHoEgAze ")])
+    func searchPlaylists(name: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.shoegaze)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let playlists = try await sut.searchPlaylists(withName: name)
+        #expect(playlists.count == 2)
+        let firstPlaylist = try #require(playlists.first)
+        #expect(firstPlaylist.id == "cf42bb98-2734-4cf5-9326-cce048b13388")
+        let firstPlaylistAttributes = try #require(firstPlaylist.attributes)
+        #expect(firstPlaylistAttributes.name == "Pillows of Noise: Shoegaze Classics")
+    }
+
+    @Test("Failing search playlists with name",
+          arguments: [(""),
+                      (" ")])
+    func failingSearchPlaylists(name: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.shoegaze)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let error = await #expect(throws: TidalAPIError.self) { try await sut.searchPlaylists(withName: name) }
+        if case let .invalidInput(invalidName) = error {
+            #expect(invalidName == name)
+        } else {
+            Issue.record("Not a TidalAPIError.invalidInput")
+        }
+    }
+
+    @Test("Search top hits for text",
+          arguments: [("Purple"),
+                      ("purple"),
+                      ("  pUrPle ")])
+    func searchTopHits(text: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.purple)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let searchResults = try await sut.searchTopHits(withText: text)
+        let included = try #require(searchResults.included)
+        #expect(included.count == 100)
+        let tracks = searchResults.tracks
+        #expect(tracks.count == 60)
+        let firstTrack = try #require(tracks.first)
+        #expect(firstTrack.id == "103052575")
+        let firstTrackAttributes = try #require(firstTrack.attributes)
+        #expect(firstTrackAttributes.title == "Purple Swag REMIX (feat. Bun B, Paul Wall & Killa Kyleon)")
+        let albums = searchResults.albums
+        #expect(albums.count == 24)
+        let firstAlbum = try #require(albums.first)
+        #expect(firstAlbum.id == "110736761")
+        let firstAlbumAttributes = try #require(firstAlbum.attributes)
+        #expect(firstAlbumAttributes.title == "Purple Mountains")
+        let artists = searchResults.artists
+        #expect(artists.count == 5)
+        let firstArtist = try #require(artists.first)
+        #expect(firstArtist.id == "30109")
+        let firstArtistAttributes = try #require(firstArtist.attributes)
+        #expect(firstArtistAttributes.name == "Puddle Of Mudd")
+        let playlists = searchResults.playlists
+        #expect(playlists.count == 5)
+        let firstPlaylist = try #require(playlists.first)
+        #expect(firstPlaylist.id == "4775a202-3634-4a88-9b78-d05ca4367f21")
+        let firstPlaylistAttributes = try #require(firstPlaylist.attributes)
+        #expect(firstPlaylistAttributes.name == "PURPLE KISS: Live Session")
+        let videos = searchResults.videos
+        #expect(videos.count == 6)
+        let firstVideo = try #require(videos.first)
+        #expect(firstVideo.id == "136266483")
+        let firstVideoAttributes = try #require(firstVideo.attributes)
+        #expect(firstVideoAttributes.title == "Purple Rain (Live At Paisley Park, 1999)")
+    }
+
+    @Test("Failing search top hits for text",
+          arguments: [(""),
+                      (" ")])
+    func failingSearchTopHits(text: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.purple)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let error = await #expect(throws: TidalAPIError.self) { try await sut.searchTopHits(withText: text) }
+        if case let .invalidInput(invalidTitle) = error {
+            #expect(invalidTitle == text)
+        } else {
+            Issue.record("Not a TidalAPIError.invalidInput")
+        }
+    }
+
+    @Test("Search tracks with title",
+          arguments: [("Subbacultcha"),
+                      ("subbacultcha"),
+                      ("  sUbBaCuLtCha ")])
+    func searchTracks(title: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.subbacultcha)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let tracks = try await sut.searchTracks(withTitle: title)
+        #expect(tracks.count == 5)
+        let firstTrack = try #require(tracks.first)
+        #expect(firstTrack.id == "106473276")
+        let firstTrackAttributes = try #require(firstTrack.attributes)
+        #expect(firstTrackAttributes.title == "Subbacultcha")
+    }
+
+    @Test("Failing search tracks with title",
+          arguments: [(""),
+                      (" ")])
+    func failingSearchTracks(title: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.subbacultcha)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let error = await #expect(throws: TidalAPIError.self) { try await sut.searchTracks(withTitle: title) }
+        if case let .invalidInput(invalidTitle) = error {
+            #expect(invalidTitle == title)
+        } else {
+            Issue.record("Not a TidalAPIError.invalidInput")
+        }
+    }
+
+    @Test("Search videos with title",
+          arguments: [("Thriller"),
+                      ("thriller"),
+                      ("  tHrIlLer ")])
+    func searchVideos(title: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.thriller)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let videos = try await sut.searchVideos(withTitle: title)
+        #expect(videos.count == 17)
+        let firstVideo = try #require(videos.first)
+        #expect(firstVideo.id == "172607336")
+        let firstVideoAttributes = try #require(firstVideo.attributes)
+        #expect(firstVideoAttributes.title == "Thriller")
+    }
+
+    @Test("Failing search videos with title",
+          arguments: [(""),
+                      (" ")])
+    func failingSearchVideos(title: String) async throws {
+        let mockAuthManager = MockInterchangeManager()
+        await mockAuthManager.pushMockData(TidalAuthResponse.Presets.validToken)
+        let mockAPIManager = MockInterchangeManager()
+        await mockAPIManager.pushMockData(TidalSearchResults.Presets.thriller)
+        let sut = TidalAPIWorker(clientID: "FAKE_CLIENT_ID",
+                                 clientSecret: "FAKE_CLIENT_SECRET",
+                                 alternateAuthManager: mockAuthManager,
+                                 alternateAPIManager: mockAPIManager)
+        let error = await #expect(throws: TidalAPIError.self) { try await sut.searchVideos(withTitle: title) }
+        if case let .invalidInput(invalidTitle) = error {
+            #expect(invalidTitle == title)
         } else {
             Issue.record("Not a TidalAPIError.invalidInput")
         }

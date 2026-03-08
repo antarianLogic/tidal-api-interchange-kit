@@ -1,0 +1,2136 @@
+{
+  "data": {
+    "id": "subbacultcha",
+    "type": "searchResults",
+    "attributes": {
+      "trackingId": "a52e2d61-be87-4ed8-875c-7c77f78a48cb"
+    },
+    "relationships": {
+      "albums": {
+        "links": {
+          "self": "/searchResults/subbacultcha/relationships/albums?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "artists": {
+        "links": {
+          "self": "/searchResults/subbacultcha/relationships/artists?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "playlists": {
+        "links": {
+          "self": "/searchResults/subbacultcha/relationships/playlists?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "videos": {
+        "links": {
+          "self": "/searchResults/subbacultcha/relationships/videos?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "topHits": {
+        "links": {
+          "self": "/searchResults/subbacultcha/relationships/topHits?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "tracks": {
+        "data": [
+          {
+            "id": "106473276",
+            "type": "tracks"
+          },
+          {
+            "id": "345594617",
+            "type": "tracks"
+          },
+          {
+            "id": "94740662",
+            "type": "tracks"
+          },
+          {
+            "id": "432949244",
+            "type": "tracks"
+          },
+          {
+            "id": "243103929",
+            "type": "tracks"
+          },
+          {
+            "id": "171311688",
+            "type": "tracks"
+          },
+          {
+            "id": "171311689",
+            "type": "tracks"
+          },
+          {
+            "id": "171311690",
+            "type": "tracks"
+          },
+          {
+            "id": "171311691",
+            "type": "tracks"
+          },
+          {
+            "id": "42140108",
+            "type": "tracks"
+          },
+          {
+            "id": "373515065",
+            "type": "tracks"
+          },
+          {
+            "id": "218420880",
+            "type": "tracks"
+          },
+          {
+            "id": "113578087",
+            "type": "tracks"
+          },
+          {
+            "id": "124695779",
+            "type": "tracks"
+          },
+          {
+            "id": "94711846",
+            "type": "tracks"
+          },
+          {
+            "id": "265227326",
+            "type": "tracks"
+          },
+          {
+            "id": "422391900",
+            "type": "tracks"
+          },
+          {
+            "id": "185775007",
+            "type": "tracks"
+          },
+          {
+            "id": "251369372",
+            "type": "tracks"
+          },
+          {
+            "id": "6921104",
+            "type": "tracks"
+          }
+        ],
+        "links": {
+          "self": "/searchResults/subbacultcha/relationships/tracks?countryCode=US&explicitFilter=INCLUDE",
+          "next": "/searchResults/subbacultcha/relationships/tracks?countryCode=US&explicitFilter=INCLUDE&page%5Bcursor%5D=3nI1Esi",
+          "meta": {
+            "nextCursor": "3nI1Esi"
+          }
+        }
+      }
+    }
+  },
+  "links": {
+    "self": "/searchResults/subbacultcha?include=tracks&countryCode=US&explicitFilter=INCLUDE"
+  },
+  "included": [
+    {
+      "id": "106473276",
+      "type": "tracks",
+      "attributes": {
+        "title": "Subbacultcha",
+        "version": null,
+        "isrc": "GBAFL9100108",
+        "duration": "PT2M10S",
+        "copyright": {
+          "text": "4AD Ltd"
+        },
+        "explicit": false,
+        "popularity": 0.5678694072557561,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/106473276",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2019-03-25T17:10:07Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/106473276/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/106473276/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/106473276/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/106473276/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/106473276/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/106473276/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/106473276/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/106473276/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/106473276/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/106473276/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/106473276/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/106473276/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/106473276/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "113578087",
+      "type": "tracks",
+      "attributes": {
+        "title": "Solar System",
+        "version": null,
+        "isrc": "GBUM71903244",
+        "duration": "PT4M48S",
+        "copyright": {
+          "text": "A Virgin EMI Records recording; ℗ 2019 Sub Focus, under exclusive licence to Universal Music Operations Limited"
+        },
+        "explicit": false,
+        "popularity": 0.6420678282396445,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/113578087",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2019-07-19T00:17:14Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/113578087/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/113578087/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/113578087/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/113578087/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/113578087/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/113578087/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/113578087/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/113578087/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/113578087/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/113578087/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/113578087/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/113578087/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/113578087/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "124695779",
+      "type": "tracks",
+      "attributes": {
+        "title": "Sweat",
+        "version": "SOPHIE Remix",
+        "isrc": "GBBRP2000001",
+        "duration": "PT4M18S",
+        "copyright": {
+          "text": "Bella Union"
+        },
+        "explicit": false,
+        "popularity": 0.6331648034601755,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/124695779",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2019-12-06T07:01:03Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/124695779/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/124695779/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/124695779/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/124695779/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/124695779/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/124695779/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/124695779/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/124695779/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/124695779/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/124695779/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/124695779/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/124695779/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/124695779/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "171311688",
+      "type": "tracks",
+      "attributes": {
+        "title": "Nothing Happens",
+        "version": null,
+        "isrc": "USCGH2161038",
+        "duration": "PT8M35S",
+        "copyright": {
+          "text": "2021 Subbacultcha"
+        },
+        "explicit": false,
+        "popularity": 0.0,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/171311688",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2021-01-28T02:00:39Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/171311688/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/171311688/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/171311688/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/171311688/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/171311688/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/171311688/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/171311688/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/171311688/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/171311688/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/171311688/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/171311688/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/171311688/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/171311688/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "171311689",
+      "type": "tracks",
+      "attributes": {
+        "title": "Blueschizo",
+        "version": null,
+        "isrc": "USCGH2161039",
+        "duration": "PT4M7S",
+        "copyright": {
+          "text": "2021 Subbacultcha"
+        },
+        "explicit": false,
+        "popularity": 0.0,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/171311689",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2021-01-28T02:00:39Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/171311689/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/171311689/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/171311689/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/171311689/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/171311689/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/171311689/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/171311689/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/171311689/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/171311689/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/171311689/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/171311689/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/171311689/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/171311689/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "171311690",
+      "type": "tracks",
+      "attributes": {
+        "title": "Breath",
+        "version": null,
+        "isrc": "USCGH2161040",
+        "duration": "PT7M29S",
+        "copyright": {
+          "text": "2021 Subbacultcha"
+        },
+        "explicit": false,
+        "popularity": 0.0,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/171311690",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2021-01-28T02:00:39Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/171311690/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/171311690/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/171311690/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/171311690/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/171311690/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/171311690/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/171311690/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/171311690/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/171311690/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/171311690/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/171311690/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/171311690/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/171311690/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "171311691",
+      "type": "tracks",
+      "attributes": {
+        "title": "Sundown Blues",
+        "version": null,
+        "isrc": "USCGH2161041",
+        "duration": "PT4M47S",
+        "copyright": {
+          "text": "2021 Subbacultcha"
+        },
+        "explicit": false,
+        "popularity": 0.0,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/171311691",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2021-01-28T02:00:39Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/171311691/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/171311691/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/171311691/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/171311691/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/171311691/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/171311691/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/171311691/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/171311691/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/171311691/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/171311691/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/171311691/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/171311691/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/171311691/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "185775007",
+      "type": "tracks",
+      "attributes": {
+        "title": "Too Much Money",
+        "version": null,
+        "isrc": "US2S71910001",
+        "duration": "PT2M16S",
+        "copyright": {
+          "text": "2019 Stones Throw Records"
+        },
+        "explicit": false,
+        "popularity": 0.6187159639616059,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/185775007",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2021-05-28T10:04:21Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/185775007/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/185775007/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/185775007/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/185775007/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/185775007/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/185775007/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/185775007/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/185775007/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/185775007/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/185775007/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/185775007/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/185775007/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/185775007/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "218420880",
+      "type": "tracks",
+      "attributes": {
+        "title": "Pilsplaat",
+        "version": null,
+        "isrc": "QZDA72216420",
+        "duration": "PT3M5S",
+        "copyright": {
+          "text": "Buffel Productions"
+        },
+        "explicit": true,
+        "popularity": 0.6517662389537537,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/218420880",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2022-02-26T13:51:07Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/218420880/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/218420880/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/218420880/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/218420880/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/218420880/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/218420880/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/218420880/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/218420880/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/218420880/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/218420880/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/218420880/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/218420880/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/218420880/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "243103929",
+      "type": "tracks",
+      "attributes": {
+        "title": "Subbacultcha",
+        "version": "Live from Brixton Academy, London. June 2nd, 2004",
+        "isrc": "UK3SA2000042",
+        "duration": "PT2M4S",
+        "copyright": {
+          "text": "(P) 2020 Pixies Music"
+        },
+        "explicit": false,
+        "popularity": 0.21785624892518116,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/243103929",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2022-08-14T17:33:45Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/243103929/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/243103929/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/243103929/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/243103929/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/243103929/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/243103929/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/243103929/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/243103929/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/243103929/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/243103929/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/243103929/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/243103929/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/243103929/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "251369372",
+      "type": "tracks",
+      "attributes": {
+        "title": "Ready To Fly",
+        "version": "Sub Focus & Dimension",
+        "isrc": "GBUM72206309",
+        "duration": "PT3M24S",
+        "copyright": {
+          "text": "℗ 2022 Sub Focus, under exclusive licence to Universal Music Operations Limited"
+        },
+        "explicit": false,
+        "popularity": 0.610627275600884,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/251369372",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2022-09-30T01:52:28Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/251369372/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/251369372/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/251369372/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/251369372/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/251369372/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/251369372/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/251369372/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/251369372/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/251369372/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/251369372/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/251369372/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/251369372/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/251369372/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "265227326",
+      "type": "tracks",
+      "attributes": {
+        "title": "So U Kno",
+        "version": null,
+        "isrc": "UKLTE2100202",
+        "duration": "PT5M44S",
+        "copyright": {
+          "text": "Poly Kicks under exclusive licence to XL Recordings Ltd"
+        },
+        "explicit": false,
+        "popularity": 0.628411871327517,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/265227326",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2022-12-08T12:58:03Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/265227326/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/265227326/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/265227326/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/265227326/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/265227326/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/265227326/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/265227326/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/265227326/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/265227326/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/265227326/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/265227326/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/265227326/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/265227326/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "345594617",
+      "type": "tracks",
+      "attributes": {
+        "title": "Subbacultcha",
+        "version": "John Peel Session (23rd June 1991)",
+        "isrc": "GBCAD2300795",
+        "duration": "PT2M8S",
+        "copyright": {
+          "text": "4AD Ltd"
+        },
+        "explicit": false,
+        "popularity": 0.2936934985559157,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/345594617",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2024-02-15T08:15:46Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/345594617/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/345594617/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/345594617/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/345594617/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/345594617/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/345594617/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/345594617/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/345594617/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/345594617/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/345594617/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/345594617/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/345594617/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/345594617/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "373515065",
+      "type": "tracks",
+      "attributes": {
+        "title": "Go Back",
+        "version": null,
+        "isrc": "USUG12402628",
+        "duration": "PT3M41S",
+        "copyright": {
+          "text": "℗ 2023 Experts Only/Darkroom Records"
+        },
+        "explicit": false,
+        "popularity": 0.712391130861493,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/373515065",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2024-07-05T00:32:36Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/373515065/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/373515065/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/373515065/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/373515065/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/373515065/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/373515065/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/373515065/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/373515065/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/373515065/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/373515065/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/373515065/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/373515065/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/373515065/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "42140108",
+      "type": "tracks",
+      "attributes": {
+        "title": "Subacultcha",
+        "version": null,
+        "isrc": "USCGH1042788",
+        "duration": "PT3M32S",
+        "copyright": {
+          "text": "2010 JT Nolan"
+        },
+        "explicit": false,
+        "popularity": 0.0,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/42140108",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2015-02-21T10:53:45Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/42140108/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/42140108/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/42140108/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/42140108/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/42140108/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/42140108/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/42140108/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/42140108/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/42140108/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/42140108/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/42140108/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/42140108/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/42140108/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "422391900",
+      "type": "tracks",
+      "attributes": {
+        "title": "On & On",
+        "version": null,
+        "isrc": "GBUM72500754",
+        "duration": "PT3M5S",
+        "copyright": {
+          "text": "℗ 2025 Sub Focus, under exclusive licence to Universal Music Operations Limited"
+        },
+        "explicit": false,
+        "popularity": 0.622488928083792,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/422391900",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2025-03-07T02:36:13Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/422391900/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/422391900/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/422391900/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/422391900/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/422391900/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/422391900/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/422391900/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/422391900/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/422391900/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/422391900/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/422391900/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/422391900/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/422391900/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "432949244",
+      "type": "tracks",
+      "attributes": {
+        "title": "Subbacultcha",
+        "version": "Live",
+        "isrc": "UK3SA2400025",
+        "duration": "PT2M15S",
+        "copyright": {
+          "text": "(P) 2025 Pixies Music"
+        },
+        "explicit": false,
+        "popularity": 0.17882481227904115,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "HIRES_LOSSLESS",
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/432949244",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2025-04-29T23:32:50Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/432949244/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/432949244/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/432949244/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/432949244/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/432949244/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/432949244/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/432949244/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/432949244/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/432949244/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/432949244/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/432949244/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/432949244/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/432949244/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "6921104",
+      "type": "tracks",
+      "attributes": {
+        "title": "Never Never",
+        "version": null,
+        "isrc": "GBBKS1100058",
+        "duration": "PT3M57S",
+        "copyright": {
+          "text": "Young"
+        },
+        "explicit": false,
+        "popularity": 0.613069575758013,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/6921104",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2011-06-07T12:46:43Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/6921104/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/6921104/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/6921104/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/6921104/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/6921104/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/6921104/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/6921104/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/6921104/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/6921104/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/6921104/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/6921104/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/6921104/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/6921104/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "94711846",
+      "type": "tracks",
+      "attributes": {
+        "title": "Desire (Sub Focus x Dimension)",
+        "version": null,
+        "isrc": "GBUM71806016",
+        "duration": "PT3M35S",
+        "copyright": {
+          "text": "℗ 2018 Sub Focus, under exclusive licence to Virgin EMI Records, a division of Universal Music Operations Limited"
+        },
+        "explicit": false,
+        "popularity": 0.6289445430689604,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/94711846",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2018-09-07T03:13:45Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/94711846/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/94711846/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/94711846/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/94711846/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/94711846/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/94711846/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/94711846/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/94711846/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/94711846/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/94711846/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/94711846/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/94711846/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/94711846/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "94740662",
+      "type": "tracks",
+      "attributes": {
+        "title": "Subbacultcha",
+        "version": "Live from The Fallout Shelter, 1986",
+        "isrc": "GBAFL1800054",
+        "duration": "PT3M37S",
+        "copyright": {
+          "text": "4AD Ltd"
+        },
+        "explicit": false,
+        "popularity": 0.3162928139542652,
+        "accessType": "PUBLIC",
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "mediaTags": [
+          "LOSSLESS"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/track/94740662",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ],
+        "spotlighted": false,
+        "createdAt": "2018-09-07T16:01:38Z"
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/tracks/94740662/relationships/albums?countryCode=US"
+          }
+        },
+        "similarTracks": {
+          "links": {
+            "self": "/tracks/94740662/relationships/similarTracks?countryCode=US"
+          }
+        },
+        "owners": {
+          "links": {
+            "self": "/tracks/94740662/relationships/owners?countryCode=US"
+          }
+        },
+        "radio": {
+          "links": {
+            "self": "/tracks/94740662/relationships/radio?countryCode=US"
+          }
+        },
+        "shares": {
+          "links": {
+            "self": "/tracks/94740662/relationships/shares?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/tracks/94740662/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/tracks/94740662/relationships/artists?countryCode=US"
+          }
+        },
+        "genres": {
+          "links": {
+            "self": "/tracks/94740662/relationships/genres?countryCode=US"
+          }
+        },
+        "lyrics": {
+          "links": {
+            "self": "/tracks/94740662/relationships/lyrics?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/tracks/94740662/relationships/providers?countryCode=US"
+          }
+        },
+        "trackStatistics": {
+          "links": {
+            "self": "/tracks/94740662/relationships/trackStatistics?countryCode=US"
+          }
+        },
+        "sourceFile": {
+          "links": {
+            "self": "/tracks/94740662/relationships/sourceFile?countryCode=US"
+          }
+        },
+        "metadataStatus": {
+          "links": {
+            "self": "/tracks/94740662/relationships/metadataStatus?countryCode=US"
+          }
+        }
+      }
+    }
+  ]
+}

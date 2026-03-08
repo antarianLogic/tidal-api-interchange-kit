@@ -12,5 +12,10 @@ import TidalAPIInterchangeKit
 public extension TidalSearchResults {
     enum Presets {
         public static let chromatica = JSONDecoder().decode(TidalSearchResults.self, fromResource: "JSON/AlbumSearchResultsChromaticaByLadyGaga", inBundle: Bundle.module)!
+        public static let badBunny = JSONDecoder().decode(TidalSearchResults.self, fromResource: "JSON/ArtistSearchBadBunny", inBundle: Bundle.module)!
+        public static let subbacultcha = JSONDecoder().decode(TidalSearchResults.self, fromResource: "JSON/TrackSearchSubbacultcha", inBundle: Bundle.module)!
+        public static let shoegaze = JSONDecoder().decode(TidalSearchResults.self, fromResource: "JSON/PlaylistSearchShoegaze", inBundle: Bundle.module)!
+        public static let purple = JSONDecoder().decode(TidalSearchResults.self, fromResource: "JSON/TopHitSearchPurple", inBundle: Bundle.module)!
+        public static let thriller = JSONDecoder().decode(TidalSearchResults.self, fromResource: "JSON/VideoSearchThriller", inBundle: Bundle.module)!
     }
 }

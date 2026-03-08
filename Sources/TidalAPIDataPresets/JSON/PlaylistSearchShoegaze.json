@@ -1,0 +1,1204 @@
+{
+  "data": {
+    "id": "shoegaze",
+    "type": "searchResults",
+    "attributes": {
+      "trackingId": "155545d3-25dd-4470-9b63-7d3651018c8b"
+    },
+    "relationships": {
+      "albums": {
+        "links": {
+          "self": "/searchResults/shoegaze/relationships/albums?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "artists": {
+        "links": {
+          "self": "/searchResults/shoegaze/relationships/artists?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "playlists": {
+        "data": [
+          {
+            "id": "cf42bb98-2734-4cf5-9326-cce048b13388",
+            "type": "playlists"
+          },
+          {
+            "id": "ee8dd929-cab4-40ac-bcf7-ff49ae5213e0",
+            "type": "playlists"
+          },
+          {
+            "id": "22cad622-e965-48a5-ba23-5a100fbbd43f",
+            "type": "playlists"
+          },
+          {
+            "id": "93d29acb-6686-400b-9eac-b4eb5ddb60e2",
+            "type": "playlists"
+          },
+          {
+            "id": "af218695-5e10-4bf7-9d1e-9c1ff80017d5",
+            "type": "playlists"
+          },
+          {
+            "id": "c85bbce9-223a-4ffb-8b4d-9cd7028e1f44",
+            "type": "playlists"
+          },
+          {
+            "id": "6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3",
+            "type": "playlists"
+          },
+          {
+            "id": "3aeef1be-076f-4aaa-aeb4-009dac8d21aa",
+            "type": "playlists"
+          },
+          {
+            "id": "e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4",
+            "type": "playlists"
+          },
+          {
+            "id": "421f3ec4-4513-4161-a62f-7bfa081b67da",
+            "type": "playlists"
+          },
+          {
+            "id": "770d2d02-4576-4653-9164-4eca5f3ec488",
+            "type": "playlists"
+          },
+          {
+            "id": "14e2f6e2-e534-4d98-b975-d02a49365ad3",
+            "type": "playlists"
+          },
+          {
+            "id": "837ea056-3a8c-4c69-a847-fd09a670c060",
+            "type": "playlists"
+          },
+          {
+            "id": "bf3f4bfc-039f-4110-ac1a-5fb57372c602",
+            "type": "playlists"
+          },
+          {
+            "id": "80d37594-316c-4f6b-a7d7-dac4f3c2454e",
+            "type": "playlists"
+          },
+          {
+            "id": "936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84",
+            "type": "playlists"
+          },
+          {
+            "id": "570d8545-99cc-4b35-b00c-0bdcab1cafb1",
+            "type": "playlists"
+          }
+        ],
+        "links": {
+          "self": "/searchResults/shoegaze/relationships/playlists?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "videos": {
+        "links": {
+          "self": "/searchResults/shoegaze/relationships/videos?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "topHits": {
+        "links": {
+          "self": "/searchResults/shoegaze/relationships/topHits?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "tracks": {
+        "links": {
+          "self": "/searchResults/shoegaze/relationships/tracks?countryCode=US&explicitFilter=INCLUDE"
+        }
+      }
+    }
+  },
+  "links": {
+    "self": "/searchResults/shoegaze?include=playlists&countryCode=US&explicitFilter=INCLUDE"
+  },
+  "included": [
+    {
+      "id": "14e2f6e2-e534-4d98-b975-d02a49365ad3",
+      "type": "playlists",
+      "attributes": {
+        "name": "Brittany Howard Essentials",
+        "description": "The Alabama Shakes released their first full-length album, “Boys & Girls” in 2012, to near-universal praise. Fronted by lead singer and guitarist Brittany Howard, the group is known for merging classic American blues rock with a healthy twang of southern soul. Howard also released her debut solo album, \"Jaime\", in 2019, and is also the lead vocalist, guitarist and songwriter of Thunderbitch. (Photo: Rovi)",
+        "bounded": true,
+        "duration": "PT1H43M37S",
+        "numberOfItems": 30,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/14e2f6e2-e534-4d98-b975-d02a49365ad3",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/14e2f6e2-e534-4d98-b975-d02a49365ad3?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/14e2f6e2-e534-4d98-b975-d02a49365ad3?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/14e2f6e2-e534-4d98-b975-d02a49365ad3?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2020-02-25T09:41:09.963Z",
+        "lastModifiedAt": "2020-03-25T10:39:21.230Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 72
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/14e2f6e2-e534-4d98-b975-d02a49365ad3/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/14e2f6e2-e534-4d98-b975-d02a49365ad3/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/14e2f6e2-e534-4d98-b975-d02a49365ad3/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/14e2f6e2-e534-4d98-b975-d02a49365ad3/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "22cad622-e965-48a5-ba23-5a100fbbd43f",
+      "type": "playlists",
+      "attributes": {
+        "name": "Indie Daze",
+        "description": "Dive into the world of ethereal shoegaze, hazy dream pop and delightful jangle anthems. (Cover: ps goner / Photo: SHHOAMKEE/Warp, press)",
+        "bounded": true,
+        "duration": "PT3H19M14S",
+        "numberOfItems": 50,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/22cad622-e965-48a5-ba23-5a100fbbd43f",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/22cad622-e965-48a5-ba23-5a100fbbd43f?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/22cad622-e965-48a5-ba23-5a100fbbd43f?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/22cad622-e965-48a5-ba23-5a100fbbd43f?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2016-11-03T22:02:46.035Z",
+        "lastModifiedAt": "2026-03-07T20:08:24.477Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 6999
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/22cad622-e965-48a5-ba23-5a100fbbd43f/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/22cad622-e965-48a5-ba23-5a100fbbd43f/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/22cad622-e965-48a5-ba23-5a100fbbd43f/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/22cad622-e965-48a5-ba23-5a100fbbd43f/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "3aeef1be-076f-4aaa-aeb4-009dac8d21aa",
+      "type": "playlists",
+      "attributes": {
+        "name": "Label Focus: Warp Records",
+        "description": "Warp Records is one of the most influential, innovative and eclectic labels of the past three decades. Since being formed by Steve Beckett, Rob Gordon and the late Rob Mitchel, and releasing its first single - Forgemasters' \"Track With No Name” - in 1989, Warp has primarily been a force at the forefront of the electronic genres, but has repeatedly demonstrated an openness for experiments in other directions. Other early releases included Nightmares On Wax’s \"Dextrous\" and LFO’s eponymous single, all of which helped lay the foundation for what would become one of the most influential labels of the ‘90s and beyond. Warp was particularly important in that decade’s British electronica scene, with artists such as Aphex Twin, Squarepusher and Autechre on the roster. Warp later expanded its musical horizons with great success, signing artists like !!!, Battles, Maximo Park and Grizzly Bear. Warp is no longer synonymous with experimental electronica, IDM and ambient, but just as easily folktronica, post-punk, shoegaze, and straightforward pop and rock. This playlist includes highlights from Warp’s exceptional catalog.",
+        "bounded": true,
+        "duration": "PT3H20M10S",
+        "numberOfItems": 45,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/3aeef1be-076f-4aaa-aeb4-009dac8d21aa",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/3aeef1be-076f-4aaa-aeb4-009dac8d21aa?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/3aeef1be-076f-4aaa-aeb4-009dac8d21aa?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/3aeef1be-076f-4aaa-aeb4-009dac8d21aa?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2014-10-01T10:03:51.047Z",
+        "lastModifiedAt": "2024-09-13T12:17:59.238Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 2209
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/3aeef1be-076f-4aaa-aeb4-009dac8d21aa/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/3aeef1be-076f-4aaa-aeb4-009dac8d21aa/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/3aeef1be-076f-4aaa-aeb4-009dac8d21aa/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/3aeef1be-076f-4aaa-aeb4-009dac8d21aa/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "421f3ec4-4513-4161-a62f-7bfa081b67da",
+      "type": "playlists",
+      "attributes": {
+        "name": "The Horrors Essentials",
+        "description": "London-based The Horrors started out as a wild garage punk band, gaining notoriety for their frantic live shows. Debut full-length ‘Strange House’ (2007) perfectly captured this incarnation of The Horrors, but the band soon evolved and morphed into something quite different. Critically acclaimed ‘Primary Colors’ (2009) involved elements of goth, shoegaze and post-punk, a path they further explored on ‘Skyer’ (2011) and ‘Luminous’ (2014). The fifth studio album ‘V’ followed in September 2017. (Photo: Rovi)",
+        "bounded": true,
+        "duration": "PT1H45M47S",
+        "numberOfItems": 22,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/421f3ec4-4513-4161-a62f-7bfa081b67da",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/421f3ec4-4513-4161-a62f-7bfa081b67da?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/421f3ec4-4513-4161-a62f-7bfa081b67da?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/421f3ec4-4513-4161-a62f-7bfa081b67da?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2017-09-19T10:24:30.778Z",
+        "lastModifiedAt": "2020-03-25T08:45:08.589Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 388
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/421f3ec4-4513-4161-a62f-7bfa081b67da/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/421f3ec4-4513-4161-a62f-7bfa081b67da/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/421f3ec4-4513-4161-a62f-7bfa081b67da/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/421f3ec4-4513-4161-a62f-7bfa081b67da/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "570d8545-99cc-4b35-b00c-0bdcab1cafb1",
+      "type": "playlists",
+      "attributes": {
+        "name": "Label Focus: Sonic Cathedral",
+        "description": "London-based label Sonic Cathedral celebrate their 20th birthday and followed a series of special live shows by picking up the Best Boutique Label at the AIM Awards in 2024. Over the years, the label has released music by artists such as Bdrmm, Andy Bell, Emma Anderson, deary, Whitelands and more.\nHere is a selection of Sonic Cathedral releases that covers all aspects of the label’s sound: from shoegaze and indie-pop to ambient, psych-folk and electronica – along with plenty of exciting remixes with one eye gazing at the dancefloor.",
+        "bounded": true,
+        "duration": "PT2H53M27S",
+        "numberOfItems": 30,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/570d8545-99cc-4b35-b00c-0bdcab1cafb1",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/570d8545-99cc-4b35-b00c-0bdcab1cafb1?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/570d8545-99cc-4b35-b00c-0bdcab1cafb1?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/570d8545-99cc-4b35-b00c-0bdcab1cafb1?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2024-10-30T10:35:57.646Z",
+        "lastModifiedAt": "2024-10-30T13:29:45.968Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 32
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/570d8545-99cc-4b35-b00c-0bdcab1cafb1/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/570d8545-99cc-4b35-b00c-0bdcab1cafb1/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/570d8545-99cc-4b35-b00c-0bdcab1cafb1/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/570d8545-99cc-4b35-b00c-0bdcab1cafb1/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3",
+      "type": "playlists",
+      "attributes": {
+        "name": "Alvvays Essentials",
+        "description": "Combining outsized hooks with smart-sweet lyrics and the powerful, ethereal guitar atmospherics of shoegaze, the Canadian dream-pop band became one of the 2010s’ most acclaimed indie bands. Survey their three stellar studio LPs — 2014’s ‘Alvvays,’ 2017’s ‘Antisocialites’ and 2022’s ‘Blue Rev’ — with these Essentials. (Photo: Norman Wong/Polyvinyl/Press)\n",
+        "bounded": true,
+        "duration": "PT34M28S",
+        "numberOfItems": 10,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2022-10-05T20:55:03.092Z",
+        "lastModifiedAt": "2024-03-06T22:38:33.183Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 215
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/6eb19db1-3f5e-4df6-a2f0-3d09286b1ca3/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "770d2d02-4576-4653-9164-4eca5f3ec488",
+      "type": "playlists",
+      "attributes": {
+        "name": "Label Focus: Creation Records",
+        "description": "Founded in 1983 by Alan McGee, Dick Green and Joe Foster, Creation Records remains one of the most culturally significant independent labels in recent memory. Throughout the 1980s and '90s, the British outfit headed by indie impresario – and notorious wild man – Alan McGee put out a number of tremendously influential releases, shaping such genres as acid house, shoegaze, post-rock, and Britpop in the process. But while iconic records like My Bloody Valentine’s ‘Loveless,’ Teenage Fanclub’s ‘Bandwagonesque’ and Primal Scream’s ‘Screamadelica’ – all released in 1991 – would garner immense critical acclaim, Creation would first strike mainstream commercial gold with Oasis’ 1994 debut ‘Definitely Maybe’, which they quickly followed up in 1995 with their monumental sophomore LP ‘(What’s The Story) Morning Glory?’. Taking the scrappy little label to unprecedented commercial heights, the record would become the best selling British album of the decade, with over 22 million units sold to date. Burned out and disillusioned after 16 strenuous years of non-stop partying, hedonism, madness and music, McGee and Foster agreed to shut down the label in 1999, with Primal Scream’s ‘XTRMNTR’ marking Creation Record’s final release. In an effort to tell this legendary label’s sonic story, we’ve compiled a playlist of its highlights featuring the likes of Oasis, My Bloody Valentine, Ride, Slowdive, Primal Scream, Teenage Fanclub, The Jesus and Mary Chain and many more.\n\n(Credit: Creation Records, press)",
+        "bounded": true,
+        "duration": "PT3H9M20S",
+        "numberOfItems": 43,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/770d2d02-4576-4653-9164-4eca5f3ec488",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/770d2d02-4576-4653-9164-4eca5f3ec488?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/770d2d02-4576-4653-9164-4eca5f3ec488?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/770d2d02-4576-4653-9164-4eca5f3ec488?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2016-09-12T07:46:08.224Z",
+        "lastModifiedAt": "2021-12-17T03:29:31.989Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 885
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/770d2d02-4576-4653-9164-4eca5f3ec488/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/770d2d02-4576-4653-9164-4eca5f3ec488/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/770d2d02-4576-4653-9164-4eca5f3ec488/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/770d2d02-4576-4653-9164-4eca5f3ec488/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "80d37594-316c-4f6b-a7d7-dac4f3c2454e",
+      "type": "playlists",
+      "attributes": {
+        "name": "The American Analog Set Essentials",
+        "description": "Formed in Austin in the mid 1990s, American Analog Set (AmAnSet) combined post-rock, shoegaze and hypnotic krautrock beats into their very own blend. Here are some of their finest moments. (Photo: Rovi) ",
+        "bounded": true,
+        "duration": "PT1H21M42S",
+        "numberOfItems": 15,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/80d37594-316c-4f6b-a7d7-dac4f3c2454e",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/80d37594-316c-4f6b-a7d7-dac4f3c2454e?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/80d37594-316c-4f6b-a7d7-dac4f3c2454e?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/80d37594-316c-4f6b-a7d7-dac4f3c2454e?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2025-03-13T18:54:18.152Z",
+        "lastModifiedAt": "2025-03-13T18:56:10.749Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 21
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/80d37594-316c-4f6b-a7d7-dac4f3c2454e/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/80d37594-316c-4f6b-a7d7-dac4f3c2454e/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/80d37594-316c-4f6b-a7d7-dac4f3c2454e/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/80d37594-316c-4f6b-a7d7-dac4f3c2454e/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "837ea056-3a8c-4c69-a847-fd09a670c060",
+      "type": "playlists",
+      "attributes": {
+        "name": "Nothing Essentials",
+        "description": "Philadelphia's very own shoegaze unit Nothing combines gorgeous tunes and dystopian lyrics, and create rather otherworldly music. Here are some mighty fine examples of their irresistible powers. (Photo: Rovi) ",
+        "bounded": true,
+        "duration": "PT1H23M13S",
+        "numberOfItems": 20,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/837ea056-3a8c-4c69-a847-fd09a670c060",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/837ea056-3a8c-4c69-a847-fd09a670c060?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/837ea056-3a8c-4c69-a847-fd09a670c060?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/837ea056-3a8c-4c69-a847-fd09a670c060?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2022-03-24T11:25:44.670Z",
+        "lastModifiedAt": "2026-03-01T23:39:26.178Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 72
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/837ea056-3a8c-4c69-a847-fd09a670c060/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/837ea056-3a8c-4c69-a847-fd09a670c060/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/837ea056-3a8c-4c69-a847-fd09a670c060/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/837ea056-3a8c-4c69-a847-fd09a670c060/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84",
+      "type": "playlists",
+      "attributes": {
+        "name": "Starflyer 59 Essentials",
+        "description": "A mainstay of Tooth and Nail Records and alternative Christian rock since the early '90s, and largely revolving around the songwriting of Jason Martin, the sound of Starflyer 59 began as guitar-driven shoegaze but has gradually evolving over the years through new wave, post-punk, dream pop and indie rock, with frequent comparisons to bands like My Bloody Valentine, The Smiths, The Cure, New Order and The Boo Radleys. While Martin is a devout Christian and thanks \"Our Lord and Savior Jesus Christ\" on every record, the vast majority of Starflyer 59 songs are secular in nature, begging to be heard by all lovers of quality alternative rock. Enjoy this collection of their best work. (Photo: Tooth & Nail/press)",
+        "bounded": true,
+        "duration": "PT2H26M43S",
+        "numberOfItems": 40,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2016-06-15T07:52:56.277Z",
+        "lastModifiedAt": "2020-03-25T07:58:08.801Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 173
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/936848b9-e95c-4a2d-9fbe-2b4f4ecc0e84/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "93d29acb-6686-400b-9eac-b4eb5ddb60e2",
+      "type": "playlists",
+      "attributes": {
+        "name": "Slowdive Essentials",
+        "description": "Slowdive ranks as the quintessential shoegaze band from the 1990s indie scene. They come armed with ethereal soundscapes and dreamy harmonies tucked in with pillows of hazy noise, but also always evolving and progressing way beyond this narrowing style. Formed in Reading, UK, in the late 1980s and centered around singers and songwriters Rachel Goswell and Neil Halstead, Slowdive released three influential albums during their relatively short life \nspan: 'Just For a Day' (1991), 'Souvlaki' (1993) and the majestic swan song 'Pygmalion' in 1995, where they leaned more toward abstract song structures and ambient electronica than waves of pop-noise. Goswell and Halstead later moved on to the more stoney and ambient folk outfit Mojave 3, as all the members kept busy in various bands and solo activities over the years. Slowdive reunited in 2014, and in 2017 they are finally ready for their first new album in 22 years. (Photo: Rovi) ",
+        "bounded": true,
+        "duration": "PT1H20M36S",
+        "numberOfItems": 15,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/93d29acb-6686-400b-9eac-b4eb5ddb60e2",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/93d29acb-6686-400b-9eac-b4eb5ddb60e2?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/93d29acb-6686-400b-9eac-b4eb5ddb60e2?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/93d29acb-6686-400b-9eac-b4eb5ddb60e2?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2017-05-02T10:43:59.647Z",
+        "lastModifiedAt": "2020-03-25T08:38:02.462Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 1054
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/93d29acb-6686-400b-9eac-b4eb5ddb60e2/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/93d29acb-6686-400b-9eac-b4eb5ddb60e2/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/93d29acb-6686-400b-9eac-b4eb5ddb60e2/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/93d29acb-6686-400b-9eac-b4eb5ddb60e2/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "af218695-5e10-4bf7-9d1e-9c1ff80017d5",
+      "type": "playlists",
+      "attributes": {
+        "name": "Frigid Stars: Slowcore Favorites",
+        "description": "In the early 1990s some bands started to turn inwards, imploding rather than exploding, in direct contrast to the prevailing indie/rock and post-grunge hegemony at the time. Terms like ‘slowcore’ and ‘sadcore’ were coined to describe artists that played really slow or really sad music. And quite often, both. Slowcore is not defined by one clear identity, but relates to hushed shoegaze, bleak singers / songwriters and experimental post-rock outfits that all found a common affinity in doing it slow. Press play and be patient. (Cover: Allec Gomes, Unsplash) ",
+        "bounded": true,
+        "duration": "PT4H21M43S",
+        "numberOfItems": 50,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/af218695-5e10-4bf7-9d1e-9c1ff80017d5",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/af218695-5e10-4bf7-9d1e-9c1ff80017d5?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/af218695-5e10-4bf7-9d1e-9c1ff80017d5?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/af218695-5e10-4bf7-9d1e-9c1ff80017d5?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2017-08-30T11:03:56.781Z",
+        "lastModifiedAt": "2024-01-22T23:08:59.264Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 3899
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/af218695-5e10-4bf7-9d1e-9c1ff80017d5/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/af218695-5e10-4bf7-9d1e-9c1ff80017d5/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/af218695-5e10-4bf7-9d1e-9c1ff80017d5/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/af218695-5e10-4bf7-9d1e-9c1ff80017d5/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "bf3f4bfc-039f-4110-ac1a-5fb57372c602",
+      "type": "playlists",
+      "attributes": {
+        "name": "Nightdrive With Numero Group",
+        "description": "Be Quiet and Drive (Far Away). Let us take care of the soundtrack. Featuring a blend of shoegaze, emo, nu-metal, and post-hardcore, such as Slint, Deftones, Calm, Unwound, and Hum.  (Cover: Numero Group)",
+        "bounded": true,
+        "duration": "PT13H24M53S",
+        "numberOfItems": 199,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/bf3f4bfc-039f-4110-ac1a-5fb57372c602",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/bf3f4bfc-039f-4110-ac1a-5fb57372c602?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/bf3f4bfc-039f-4110-ac1a-5fb57372c602?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/bf3f4bfc-039f-4110-ac1a-5fb57372c602?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2025-03-12T10:49:02.786Z",
+        "lastModifiedAt": "2025-03-12T12:07:52.826Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 120
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/bf3f4bfc-039f-4110-ac1a-5fb57372c602/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/bf3f4bfc-039f-4110-ac1a-5fb57372c602/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/bf3f4bfc-039f-4110-ac1a-5fb57372c602/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/bf3f4bfc-039f-4110-ac1a-5fb57372c602/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "c85bbce9-223a-4ffb-8b4d-9cd7028e1f44",
+      "type": "playlists",
+      "attributes": {
+        "name": "Made in Germany: Krautrock",
+        "description": "In the late 1960s a new sound emerged in Germany, sparked by a generation growing up in the dark shadows of the war. Leaning on the counter culture movement, but performing music less dependent on Anglo-American styles, this movement was closer associated with the likes of avant-garde, jazz, minimalism, Eastern influences and electronics. A wave of pioneering groups emerged at the end of the decade, epitomized by bands like Can, Kluster, Tangerine Dream, Faust, Neu! and Kraftwerk. British media coined them all as “Krautrock”, but their characteristics were more diverse, their sound more nuanced, than could aptly fit in one bag – from the ambient soundscapes of Tangerine Dream to the rhythmic outbursts of Can, from the motorik beats of Neu! to the global playground of Embryo. Even so, we’ve gathered just a few examples of Krautrock here, largely picked from the “golden era” in the early to mid 1970s. Most of these tracks belong more naturally in the context of an album, so we encourage you to use this list as a starting point for deeper explorations. With the exception of Kraftwerk, Krautrock did not gain any huge commercial success, but the influence of these bands can be traced from David Bowie to Stereolab to Wilco, from spacerock to shoegaze, post-punk, new wave and beyond. Kosmiche music, indeed. (Photo: Unsplash)",
+        "bounded": true,
+        "duration": "PT3H46M24S",
+        "numberOfItems": 28,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/c85bbce9-223a-4ffb-8b4d-9cd7028e1f44",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/c85bbce9-223a-4ffb-8b4d-9cd7028e1f44?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/c85bbce9-223a-4ffb-8b4d-9cd7028e1f44?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/c85bbce9-223a-4ffb-8b4d-9cd7028e1f44?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2015-07-21T07:54:10.083Z",
+        "lastModifiedAt": "2020-08-13T19:57:12.185Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 4296
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/c85bbce9-223a-4ffb-8b4d-9cd7028e1f44/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/c85bbce9-223a-4ffb-8b4d-9cd7028e1f44/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/c85bbce9-223a-4ffb-8b4d-9cd7028e1f44/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/c85bbce9-223a-4ffb-8b4d-9cd7028e1f44/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "cf42bb98-2734-4cf5-9326-cce048b13388",
+      "type": "playlists",
+      "attributes": {
+        "name": "Pillows of Noise: Shoegaze Classics",
+        "description": "Shoegaze emerged in 1980s Britain; a loosely based term coined after a number of bands appeared with introspective looks and a motionless style, more looking down at their guitar pedals than facing the audience. My Bloody Valentine is probably the quintessential and most influential shoegaze band, but related acts like The Jesus & Mary Chain, Ride and Slowdive are all are considered among the most important names from a scene also jokingly referred to as “the scene that celebrates itself.\" Distinct features include loud walls of driving guitars, the prominent use of effect pedals, soft waves of noise and wrenched, dreamlike vocals. Shoegaze is closely connected to other sub-genres of indie rock, like dream pop, post-rock and later nu-gaze. The scene's various players are as plentiful as its highlights, and, without drawing any firm lines, we give you some prime examples of this beloved style. Crank it up and close your eyes. (Photo: Unsplash)",
+        "bounded": true,
+        "duration": "PT4H5M16S",
+        "numberOfItems": 50,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/cf42bb98-2734-4cf5-9326-cce048b13388",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/cf42bb98-2734-4cf5-9326-cce048b13388?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/cf42bb98-2734-4cf5-9326-cce048b13388?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/cf42bb98-2734-4cf5-9326-cce048b13388?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2016-10-18T15:03:21.652Z",
+        "lastModifiedAt": "2026-03-01T23:48:49.772Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 8550
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/cf42bb98-2734-4cf5-9326-cce048b13388/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/cf42bb98-2734-4cf5-9326-cce048b13388/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/cf42bb98-2734-4cf5-9326-cce048b13388/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/cf42bb98-2734-4cf5-9326-cce048b13388/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4",
+      "type": "playlists",
+      "attributes": {
+        "name": "Primal Scream Essentials",
+        "description": "Since making their debut in 1987 with ‘Sonic Flower Groove,’ Primal Scream has refused to be pigeonholed, consistently confounding listeners with disparate sounds born of their genre-defying approach. Over the course of eleven albums, the band has dipped its collective toe into the waters of electronica, shoegaze, indie pop, neo-psychedelia, alternative rock and more, lead through it all by consummate frontman Bobby Gillespie. Featuring tracks from ‘Screamadelica’ (1991), ‘XTRMNTR’ (2000), ‘Chaosmosis’ (2016) and more, enjoy this Primal Scream sampler. (Photo: Rovi)",
+        "bounded": true,
+        "duration": "PT1H40M3S",
+        "numberOfItems": 20,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2017-03-29T21:18:47.261Z",
+        "lastModifiedAt": "2023-08-21T23:21:27.660Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 516
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/e6dbab95-cf8b-4e05-bb2a-82e06a1b38b4/relationships/items?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "ee8dd929-cab4-40ac-bcf7-ff49ae5213e0",
+      "type": "playlists",
+      "attributes": {
+        "name": "A Guide to Shoegaze With Numero Group",
+        "description": "Celebrating the scene that celebrates itself, featuring pioneers and contemporaries. (Cover: Numero Group)",
+        "bounded": true,
+        "duration": "PT13H40M31S",
+        "numberOfItems": 183,
+        "externalLinks": [
+          {
+            "href": "https://listen.tidal.com/playlist/ee8dd929-cab4-40ac-bcf7-ff49ae5213e0",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/ee8dd929-cab4-40ac-bcf7-ff49ae5213e0?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_ANDROID"
+            }
+          },
+          {
+            "href": "https://tidal.com/playlist/ee8dd929-cab4-40ac-bcf7-ff49ae5213e0?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_IOS"
+            }
+          },
+          {
+            "href": "https://listen.tidal.com/playlist/ee8dd929-cab4-40ac-bcf7-ff49ae5213e0?play=true",
+            "meta": {
+              "type": "TIDAL_AUTOPLAY_WEB"
+            }
+          }
+        ],
+        "createdAt": "2025-03-12T21:28:54.561Z",
+        "lastModifiedAt": "2025-11-23T16:41:52.316Z",
+        "accessType": "PUBLIC",
+        "playlistType": "EDITORIAL",
+        "numberOfFollowers": 558
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/playlists/ee8dd929-cab4-40ac-bcf7-ff49ae5213e0/relationships/owners?countryCode=US"
+          }
+        },
+        "coverArt": {
+          "links": {
+            "self": "/playlists/ee8dd929-cab4-40ac-bcf7-ff49ae5213e0/relationships/coverArt?countryCode=US"
+          }
+        },
+        "ownerProfiles": {
+          "links": {
+            "self": "/playlists/ee8dd929-cab4-40ac-bcf7-ff49ae5213e0/relationships/ownerProfiles?countryCode=US"
+          }
+        },
+        "items": {
+          "links": {
+            "self": "/playlists/ee8dd929-cab4-40ac-bcf7-ff49ae5213e0/relationships/items?countryCode=US"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1217 @@
+{
+  "data": {
+    "id": "thriller",
+    "type": "searchResults",
+    "attributes": {
+      "trackingId": "041eb592-00a4-44ba-8240-e824359d2315"
+    },
+    "relationships": {
+      "albums": {
+        "links": {
+          "self": "/searchResults/thriller/relationships/albums?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "artists": {
+        "links": {
+          "self": "/searchResults/thriller/relationships/artists?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "playlists": {
+        "links": {
+          "self": "/searchResults/thriller/relationships/playlists?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "videos": {
+        "data": [
+          {
+            "id": "97320512",
+            "type": "videos"
+          },
+          {
+            "id": "23794562",
+            "type": "videos"
+          },
+          {
+            "id": "26153739",
+            "type": "videos"
+          },
+          {
+            "id": "252975255",
+            "type": "videos"
+          },
+          {
+            "id": "172607336",
+            "type": "videos"
+          },
+          {
+            "id": "29636253",
+            "type": "videos"
+          },
+          {
+            "id": "247147286",
+            "type": "videos"
+          },
+          {
+            "id": "422879544",
+            "type": "videos"
+          },
+          {
+            "id": "212118495",
+            "type": "videos"
+          },
+          {
+            "id": "268447179",
+            "type": "videos"
+          },
+          {
+            "id": "28917072",
+            "type": "videos"
+          },
+          {
+            "id": "58502489",
+            "type": "videos"
+          },
+          {
+            "id": "258076276",
+            "type": "videos"
+          },
+          {
+            "id": "25724881",
+            "type": "videos"
+          },
+          {
+            "id": "391814755",
+            "type": "videos"
+          },
+          {
+            "id": "158193659",
+            "type": "videos"
+          },
+          {
+            "id": "468149963",
+            "type": "videos"
+          },
+          {
+            "id": "433084797",
+            "type": "videos"
+          },
+          {
+            "id": "423981979",
+            "type": "videos"
+          },
+          {
+            "id": "317136083",
+            "type": "videos"
+          }
+        ],
+        "links": {
+          "self": "/searchResults/thriller/relationships/videos?countryCode=US&explicitFilter=INCLUDE",
+          "next": "/searchResults/thriller/relationships/videos?countryCode=US&explicitFilter=INCLUDE&page%5Bcursor%5D=3nI1Esi",
+          "meta": {
+            "nextCursor": "3nI1Esi"
+          }
+        }
+      },
+      "topHits": {
+        "links": {
+          "self": "/searchResults/thriller/relationships/topHits?countryCode=US&explicitFilter=INCLUDE"
+        }
+      },
+      "tracks": {
+        "links": {
+          "self": "/searchResults/thriller/relationships/tracks?countryCode=US&explicitFilter=INCLUDE"
+        }
+      }
+    }
+  },
+  "links": {
+    "self": "/searchResults/thriller?include=videos&countryCode=US&explicitFilter=INCLUDE"
+  },
+  "included": [
+    {
+      "id": "158193659",
+      "type": "videos",
+      "attributes": {
+        "title": "The Thrill Is Gone",
+        "version": "Live On The Ed Sullivan Show, October 18, 1970",
+        "isrc": "QZECT2090118",
+        "duration": "PT2M38S",
+        "copyright": {
+          "text": "© 2020 SOFA Entertainment, under exclusive license to Universal Music Enterprises, a division of UMG Recordings, Inc."
+        },
+        "releaseDate": "2020-10-17",
+        "explicit": false,
+        "popularity": 0.29501394864542707,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/158193659",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/158193659/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/158193659/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/158193659/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/158193659/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/158193659/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "172607336",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller",
+        "version": "Lyric Video",
+        "isrc": "QM5LC1700727",
+        "duration": "PT5M52S",
+        "copyright": {
+          "text": "FiXT"
+        },
+        "releaseDate": "2017-10-13",
+        "explicit": false,
+        "popularity": 0.06728918435585451,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/172607336",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/172607336/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/172607336/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/172607336/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/172607336/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/172607336/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "212118495",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller",
+        "isrc": "USUYG1408385",
+        "duration": "PT2M38S",
+        "copyright": {
+          "text": "2022 Get It In Ent LLC"
+        },
+        "releaseDate": "2022-01-15",
+        "explicit": true,
+        "popularity": 0.002399448670818523,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/212118495",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/212118495/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/212118495/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/212118495/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/212118495/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/212118495/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "23794562",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller (Official Video - Shortened Version)",
+        "isrc": "USSM20800257",
+        "duration": "PT3M20S",
+        "copyright": {
+          "text": "(C) 1982, 2008 MJJ Productions Inc."
+        },
+        "releaseDate": "1982-01-01",
+        "explicit": false,
+        "popularity": 0.49652091560635675,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/23794562",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/23794562/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/23794562/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/23794562/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/23794562/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/23794562/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "247147286",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller",
+        "isrc": "GBYZK2200011",
+        "duration": "PT5M26S",
+        "copyright": {
+          "text": "Saga Entertainment Ltd"
+        },
+        "releaseDate": "2022-09-30",
+        "explicit": false,
+        "popularity": 0.005248615015781775,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/247147286",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/247147286/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/247147286/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/247147286/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/247147286/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/247147286/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "252975255",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller",
+        "version": "Lyric Video",
+        "isrc": "USAB02202238",
+        "duration": "PT4M7S",
+        "copyright": {
+          "text": "© 2022 Kidz Bop Enterprises LLC., Distributed by Concord."
+        },
+        "releaseDate": "2022-10-12",
+        "explicit": false,
+        "popularity": 0.14088538560140718,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/252975255",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/252975255/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/252975255/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/252975255/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/252975255/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/252975255/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "25724881",
+      "type": "videos",
+      "attributes": {
+        "title": "The Thrill Is Gone",
+        "version": "Live At B.B. King's Blues Club, Blues Summit/1993",
+        "isrc": "USMCV0300359",
+        "duration": "PT3M16S",
+        "copyright": {
+          "text": "© 2005 UMG Recordings, Inc."
+        },
+        "releaseDate": "2005-01-01",
+        "explicit": false,
+        "popularity": 0.2354943808136979,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/25724881",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/25724881/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/25724881/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/25724881/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/25724881/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/25724881/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "258076276",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller Killer",
+        "isrc": "QZWDD2245540",
+        "duration": "PT3M34S",
+        "copyright": {
+          "text": "KENDRA ERIKA"
+        },
+        "releaseDate": "2022-11-25",
+        "explicit": false,
+        "popularity": 0.032089971005916595,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/258076276",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/258076276/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/258076276/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/258076276/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/258076276/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/258076276/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "26153739",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller (Official 4K Video)",
+        "isrc": "USSM20301507",
+        "duration": "PT13M42S",
+        "copyright": {
+          "text": "(C) 1982 MJJ Productions Inc."
+        },
+        "releaseDate": "1982-01-01",
+        "explicit": false,
+        "popularity": 0.604705139427992,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/26153739",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/26153739/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/26153739/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/26153739/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/26153739/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/26153739/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "268447179",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller",
+        "isrc": "QZTAV2227480",
+        "duration": "PT2M47S",
+        "copyright": {
+          "text": "Llyric Morrison"
+        },
+        "releaseDate": "2022-02-14",
+        "explicit": true,
+        "popularity": 0.0,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/268447179",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/268447179/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/268447179/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/268447179/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/268447179/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/268447179/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "28917072",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller 25th Anniversary",
+        "isrc": "USSM20800079",
+        "duration": "PT7M29S",
+        "copyright": {
+          "text": "(C) 2008 MJJ Productions Inc."
+        },
+        "releaseDate": "2008-02-12",
+        "explicit": false,
+        "popularity": 0.17446047755566269,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/28917072",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/28917072/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/28917072/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/28917072/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/28917072/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/28917072/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "29636253",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller (Live Video)",
+        "isrc": "BRSME0200574",
+        "duration": "PT8M24S",
+        "copyright": {
+          "text": "(C)2002 Sony Music Entertainment (Brasil) I.C.L"
+        },
+        "releaseDate": "2012-12-17",
+        "explicit": false,
+        "popularity": 0.015710775360824193,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/29636253",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/29636253/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/29636253/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/29636253/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/29636253/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/29636253/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "317136083",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller 2023",
+        "isrc": "QZQAY2311898",
+        "duration": "PT4M23S",
+        "copyright": {
+          "text": "2023 Damien Cruise"
+        },
+        "releaseDate": "2023-05-05",
+        "explicit": true,
+        "popularity": 0.0,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/317136083",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/317136083/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/317136083/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/317136083/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/317136083/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/317136083/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "391814755",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller (Michael Jackson Reimagined)",
+        "isrc": "QMDA62467725",
+        "duration": "PT4M23S",
+        "copyright": {
+          "text": "(C) 2024 Nu Deco Ensemble"
+        },
+        "releaseDate": "2024-10-18",
+        "explicit": false,
+        "popularity": 0.009999999776482582,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/391814755",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/391814755/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/391814755/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/391814755/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/391814755/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/391814755/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "422879544",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller",
+        "version": "La Guerra De Los 80s",
+        "isrc": "MXD791900258",
+        "duration": "PT6M12S",
+        "copyright": {
+          "text": "(C) 2019 BOBO Music"
+        },
+        "releaseDate": "2019-12-05",
+        "explicit": false,
+        "popularity": 0.0,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/422879544",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/422879544/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/422879544/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/422879544/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/422879544/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/422879544/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "423981979",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller (feat. Ice Prince) (feat. Ice Prince)",
+        "isrc": "QZTAV2514078",
+        "duration": "PT3M39S",
+        "copyright": {
+          "text": "Mod3st"
+        },
+        "releaseDate": "2024-07-19",
+        "explicit": true,
+        "popularity": 0.0,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/423981979",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/423981979/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/423981979/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/423981979/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/423981979/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/423981979/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "433084797",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller (feat. LilCj kasino & Peso Peso) (Lyric Video)",
+        "isrc": "QZTAV2523527",
+        "duration": "PT3M25S",
+        "copyright": {
+          "text": "B.lee"
+        },
+        "releaseDate": "2025-04-30",
+        "explicit": false,
+        "popularity": 0.0,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/433084797",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/433084797/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/433084797/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/433084797/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/433084797/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/433084797/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "468149963",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller Halloween",
+        "isrc": "QZTAV2558886",
+        "duration": "PT3M22S",
+        "copyright": {
+          "text": "Karma Paul"
+        },
+        "releaseDate": "2025-10-24",
+        "explicit": false,
+        "popularity": 0.0,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/468149963",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/468149963/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/468149963/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/468149963/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/468149963/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/468149963/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "58502489",
+      "type": "videos",
+      "attributes": {
+        "title": "Cheap Thrills (Performance Edit)",
+        "isrc": "USRV81600169",
+        "duration": "PT3M38S",
+        "copyright": {
+          "text": "(C) 2016 Monkey Puzzle Records, under exclusive license to RCA Records"
+        },
+        "releaseDate": "2016-03-22",
+        "explicit": false,
+        "popularity": 0.34157299741883906,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/58502489",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/58502489/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/58502489/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/58502489/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/58502489/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/58502489/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    },
+    {
+      "id": "97320512",
+      "type": "videos",
+      "attributes": {
+        "title": "Thriller",
+        "version": "Official Video",
+        "isrc": "USSM20301090",
+        "duration": "PT13M33S",
+        "copyright": {
+          "text": "© 1982 MJJ Productions Inc."
+        },
+        "explicit": false,
+        "popularity": 0.5884657892449064,
+        "availability": [
+          "STREAM",
+          "DJ"
+        ],
+        "externalLinks": [
+          {
+            "href": "https://tidal.com/browse/video/97320512",
+            "meta": {
+              "type": "TIDAL_SHARING"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "links": {
+            "self": "/videos/97320512/relationships/albums?countryCode=US"
+          }
+        },
+        "thumbnailArt": {
+          "links": {
+            "self": "/videos/97320512/relationships/thumbnailArt?countryCode=US"
+          }
+        },
+        "credits": {
+          "links": {
+            "self": "/videos/97320512/relationships/credits?countryCode=US"
+          }
+        },
+        "artists": {
+          "links": {
+            "self": "/videos/97320512/relationships/artists?countryCode=US"
+          }
+        },
+        "providers": {
+          "links": {
+            "self": "/videos/97320512/relationships/providers?countryCode=US"
+          }
+        }
+      }
+    }
+  ]
+}

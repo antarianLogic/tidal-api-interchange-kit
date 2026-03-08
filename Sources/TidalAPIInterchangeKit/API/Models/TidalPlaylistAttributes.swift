@@ -17,7 +17,7 @@ public struct TidalPlaylistAttributes: Codable, Equatable, Hashable, Sendable {
     public let bounded: Bool
 
     // Datetime of playlist creation (ISO 8601)
-    public let createdAt: Date
+    public let createdAt: String
 
     public let description: String?
 
@@ -27,7 +27,7 @@ public struct TidalPlaylistAttributes: Codable, Equatable, Hashable, Sendable {
     public let externalLinks: [TidalExternalLink]
 
     /// Datetime of last modification of the playlist (ISO 8601)
-    public let lastModifiedAt: Date
+    public let lastModifiedAt: String
 
     public let name: String
 
@@ -39,11 +39,11 @@ public struct TidalPlaylistAttributes: Codable, Equatable, Hashable, Sendable {
 
     public init(accessType: String,
                 bounded: Bool,
-                createdAt: Date,
+                createdAt: String,
                 description: String? = nil,
                 duration: String? = nil,
                 externalLinks: [TidalExternalLink],
-                lastModifiedAt: Date,
+                lastModifiedAt: String,
                 name: String,
                 numberOfFollowers: Int32,
                 numberOfItems: Int32? = nil,

@@ -9,6 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - `TidalArtistAttributes`
+- `TidalArtwork`
+- `TidalArtworkAttributes`
+- `TidalArtworkFile`
+- `TidalArtworkFileMeta`
+- `TidalArtworkVisualMetadata`
+- `TidalIncludedType`
+- `TidalPlaylist`
+- `TidalPlaylistAttributes`
+- `TidalVideo`
+- `TidalVideoAttributes`
+- `searchArtists(withName:...` in `TidalAPIWorker`
+- `searchPlaylists(withName:...` in `TidalAPIWorker`
+- `searchTopHits(withText:...` in `TidalAPIWorker`
+- `searchTracks(withTitle:...` in `TidalAPIWorker`
+- `searchVideos(withTitle:...` in `TidalAPIWorker`
 
 ### Changed
 - `TidalAPIEndpoints`: `getAlbums(withUPC: String...` changed to `getAlbums(withUPCs albumUPCs: [String]...`
