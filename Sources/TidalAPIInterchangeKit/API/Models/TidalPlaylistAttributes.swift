@@ -14,20 +14,17 @@ public struct TidalPlaylistAttributes: Codable, Equatable, Hashable, Sendable {
 
     public let accessType: String
 
-    public let bounded: Bool
+    public let isBounded: Bool
 
-    // Datetime of playlist creation (ISO 8601)
-    public let createdAt: String
+    public let iso8601CreatedAt: String
 
     public let description: String?
 
-    // Duration of playlist (ISO 8601)
-    public let duration: String?
+    public let iso8601Duration: String?
 
     public let externalLinks: [TidalExternalLink]
 
-    /// Datetime of last modification of the playlist (ISO 8601)
-    public let lastModifiedAt: String
+    public let iso8601LastModifiedAt: String
 
     public let name: String
 
@@ -38,26 +35,49 @@ public struct TidalPlaylistAttributes: Codable, Equatable, Hashable, Sendable {
     public let playlistType: String
 
     public init(accessType: String,
-                bounded: Bool,
-                createdAt: String,
+                isBounded: Bool,
+                iso8601CreatedAt: String,
                 description: String? = nil,
-                duration: String? = nil,
+                iso8601Duration: String? = nil,
                 externalLinks: [TidalExternalLink],
-                lastModifiedAt: String,
+                iso8601LastModifiedAt: String,
                 name: String,
                 numberOfFollowers: Int32,
                 numberOfItems: Int32? = nil,
                 playlistType: String) {
         self.accessType = accessType
-        self.bounded = bounded
-        self.createdAt = createdAt
+        self.isBounded = isBounded
+        self.iso8601CreatedAt = iso8601CreatedAt
         self.description = description
-        self.duration = duration
+        self.iso8601Duration = iso8601Duration
         self.externalLinks = externalLinks
-        self.lastModifiedAt = lastModifiedAt
+        self.iso8601LastModifiedAt = iso8601LastModifiedAt
         self.name = name
         self.numberOfFollowers = numberOfFollowers
         self.numberOfItems = numberOfItems
         self.playlistType = playlistType
     }
+
+    enum CodingKeys: String, CodingKey {
+        case accessType
+        case isBounded = "bounded"
+        case iso8601CreatedAt = "createdAt"
+        case description
+        case iso8601Duration = "duration"
+        case externalLinks
+        case iso8601LastModifiedAt = "lastModifiedAt"
+        case name
+        case numberOfFollowers
+        case numberOfItems
+        case playlistType
+    }
+}
+
+public extension TidalPlaylistAttributes {
+
+    var creationDate: Date? { try? Date.ISO8601FormatStyle.dateTimeStyle.parse(iso8601CreatedAt) }
+
+    var modificationDate: Date? { try? Date.ISO8601FormatStyle.dateTimeStyle.parse(iso8601LastModifiedAt) }
+
+    // TODO: add getter to convert iso8601Duration to TimeInterval
 }

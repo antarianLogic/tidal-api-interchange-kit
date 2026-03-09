@@ -33,6 +33,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `TidalResource` to `TidalArtist`
 - `TidalArtistTracks`
 - `TidalAlbumSearchResults` to `TidalSearchResults`
+- `TidalAlbumAttributes`: renamed some properties and added `releaseDate` getter
+- `TidalTrackAttributes`: renamed some properties and added `creationDate` getter
 
 ### Deprecated
 TBD

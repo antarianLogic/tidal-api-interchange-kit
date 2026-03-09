@@ -20,11 +20,11 @@ public struct TidalTrackAttributes: Codable, Equatable, Hashable, Sendable {
 
     public let copyright: TidalCopyright?
 
-    public let createdAt: String?
+    public let iso8601CreatedAt: String?
 
-    public let duration: String
+    public let iso8601Duration: String
 
-    public let explicit: Bool
+    public let isExplicit: Bool
 
     public let externalLinks: [TidalExternalLink]?
 
@@ -38,7 +38,7 @@ public struct TidalTrackAttributes: Codable, Equatable, Hashable, Sendable {
 
     public let popularity: Double
 
-    public let spotlighted: Bool?
+    public let isSpotlighted: Bool?
 
     public let toneTags: [String]?
 
@@ -48,33 +48,63 @@ public struct TidalTrackAttributes: Codable, Equatable, Hashable, Sendable {
                 accessType: String? = nil,
                 bpm: Float? = nil,
                 copyright: TidalCopyright? = nil,
-                createdAt: String? = nil,
-                duration: String,
-                explicit: Bool,
+                iso8601CreatedAt: String? = nil,
+                iso8601Duration: String,
+                isExplicit: Bool,
                 externalLinks: [TidalExternalLink]? = nil,
                 isrc: String,
                 key: String? = nil,
                 keyScale: String? = nil,
                 mediaTags: [String],
                 popularity: Double,
-                spotlighted: Bool? = nil,
+                isSpotlighted: Bool? = nil,
                 toneTags: [String]?,
                 version: String? = nil) {
         self.title = title
         self.accessType = accessType
         self.bpm = bpm
         self.copyright = copyright
-        self.createdAt = createdAt
-        self.duration = duration
-        self.explicit = explicit
+        self.iso8601CreatedAt = iso8601CreatedAt
+        self.iso8601Duration = iso8601Duration
+        self.isExplicit = isExplicit
         self.externalLinks = externalLinks
         self.isrc = isrc
         self.key = key
         self.keyScale = keyScale
         self.mediaTags = mediaTags
         self.popularity = popularity
-        self.spotlighted = spotlighted
+        self.isSpotlighted = isSpotlighted
         self.toneTags = toneTags
         self.version = version
     }
+
+    enum CodingKeys: String, CodingKey {
+        case title
+        case accessType
+        case bpm
+        case copyright
+        case iso8601CreatedAt = "createdAt"
+        case iso8601Duration = "duration"
+        case isExplicit = "explicit"
+        case externalLinks
+        case isrc
+        case key
+        case keyScale
+        case mediaTags
+        case popularity
+        case isSpotlighted = "spotlighted"
+        case toneTags
+        case version
+    }
+}
+
+public extension TidalTrackAttributes {
+
+    var creationDate: Date? {
+        guard let iso8601CreatedAt else { return nil }
+
+        return try? Date.ISO8601FormatStyle.dateTimeStyle.parse(iso8601CreatedAt)
+    }
+
+    // TODO: add getter to convert iso8601Duration to TimeInterval
 }

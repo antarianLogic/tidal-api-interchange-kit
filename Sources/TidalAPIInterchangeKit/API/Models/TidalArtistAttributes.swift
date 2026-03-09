@@ -14,7 +14,7 @@ public struct TidalArtistAttributes: Codable, Equatable, Hashable, Sendable {
 
     public let name: String
 
-    public let contributionsEnabled: Bool?
+    public let isContributionsEnabled: Bool?
 
     public let contributionsSalesPitch: String?
 
@@ -26,23 +26,35 @@ public struct TidalArtistAttributes: Codable, Equatable, Hashable, Sendable {
 
     public let popularity: Double
 
-    public let spotlighted: Bool?
+    public let isSpotlighted: Bool?
 
     public init(name: String,
-                contributionsEnabled: Bool? = nil,
+                isContributionsEnabled: Bool? = nil,
                 contributionsSalesPitch: String? = nil,
                 externalLinks: [TidalExternalLink]? = nil,
                 handle: String? = nil,
                 ownerType: String? = nil,
                 popularity: Double,
-                spotlighted: Bool? = nil) {
+                isSpotlighted: Bool? = nil) {
         self.name = name
-        self.contributionsEnabled = contributionsEnabled
+        self.isContributionsEnabled = isContributionsEnabled
         self.contributionsSalesPitch = contributionsSalesPitch
         self.externalLinks = externalLinks
         self.handle = handle
         self.ownerType = ownerType
         self.popularity = popularity
-        self.spotlighted = spotlighted
+        self.isSpotlighted = isSpotlighted
     }
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case isContributionsEnabled = "contributionsEnabled"
+        case contributionsSalesPitch
+        case externalLinks
+        case handle
+        case ownerType
+        case popularity
+        case isSpotlighted = "spotlighted"
+    }
+
 }
