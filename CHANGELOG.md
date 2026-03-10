@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `TidalPlaylistAttributes`
 - `TidalVideo`
 - `TidalVideoAttributes`
+- `TidalAlbumRelationships`
+- `TidalAlbumItemRelationship`
+- `TidalAlbumItemResource`
+- `TidalAlbumItemMeta`
 - `searchArtists(withName:...` in `TidalAPIWorker`
 - `searchPlaylists(withName:...` in `TidalAPIWorker`
 - `searchTopHits(withText:...` in `TidalAPIWorker`
@@ -31,10 +35,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `TidalAPIWorker`: `getTracksForArtist` now returns `TidalArtistTracks`
 - `TidalAPIWorker`: `getAlbum(withID:...` now returns tracks and artwork
 - `TidalResource` to `TidalArtist`
-- `TidalArtistTracks`
+- `TidalArtistTracks`: added `included` property
 - `TidalAlbumSearchResults` to `TidalSearchResults`
 - `TidalAlbumAttributes`: renamed some properties and added `releaseDate` getter
 - `TidalTrackAttributes`: renamed some properties and added `creationDate` getter
+- `TidalAlbumResource`: added `trackAt(volumeNumber:trackNumber:)`
+- `TidalAlbum`: added `relationships` property
 
 ### Deprecated
 TBD

@@ -30,10 +30,7 @@ public extension TidalAlbumResource {
 
     var tracks: [TidalTrack] {
         guard let included else { return [] }
-        // Note: The tracks in the JSON (and returned here) seem to be in the order as on the album, thankfully.
-        // TODO: We could dig into the data.relationships.items.data to find the volume and track numbers if we wanted
-        // to be sure. It would be nice to have that info at the track level too. We would need to decode the
-        // relationships property in TidalAlbum first though and we aren't doing that currently.
+        // Note: The tracks in the JSON (and returned here) seem to be in the same order as on the album.
         return included.compactMap {
             if case let .tracks(tidalTracks) = $0 {
                 return tidalTracks
@@ -67,5 +64,27 @@ public extension TidalAlbumResource {
                 return nil
             }
         }
+    }
+
+    func trackAt(volumeNumber: Int, trackNumber: Int) -> TidalTrack? {
+        guard let included,
+              let trackData = data.relationships?.items.data else { return nil }
+
+        // see if we can find a track ID in the data that has a matching volume and track number
+        let matchingTrackData = trackData.first {
+            guard let meta = $0.meta else { return false }
+            return meta.volumeNumber == volumeNumber && meta.trackNumber == trackNumber
+        }
+        guard let matchingTrackID = matchingTrackData?.id else { return nil }
+
+        // now find the track included type object with that ID
+        let trackIncludedType = included.first {
+            guard case let .tracks(tidalTracks) = $0 else { return false }
+            return tidalTracks.id == matchingTrackID
+        }
+        // unwrap the actual track object from the associated data
+        guard case let .tracks(tidalTrack) = trackIncludedType else { return nil }
+
+        return tidalTrack
     }
 }

@@ -16,16 +16,17 @@ public struct TidalAlbum: Codable, Equatable, Hashable, Sendable {
 
     public let id: String
 
-    // Not including the relationships property for now
-    // public let relationships: ...
+    public let relationships: TidalAlbumRelationships?
 
     public let type: String
 
     public init(attributes: TidalAlbumAttributes? = nil,
                 id: String,
+                relationships: TidalAlbumRelationships? = nil,
                 type: String) {
         self.attributes = attributes
         self.id = id
+        self.relationships = relationships
         self.type = type
     }
 }
