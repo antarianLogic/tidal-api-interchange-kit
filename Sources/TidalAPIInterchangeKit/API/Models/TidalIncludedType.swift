@@ -61,3 +61,79 @@ public enum TidalIncludedType: Codable, Equatable, Hashable, Sendable {
         }
     }
 }
+
+public extension [TidalIncludedType] {
+
+    var albums: [TidalAlbum] {
+        return compactMap {
+            if case let .albums(tidalAlbum) = $0 {
+                return tidalAlbum
+            } else {
+                return nil
+            }
+        }
+    }
+
+    var artists: [TidalArtist] {
+        return compactMap {
+            if case let .artists(tidalArtist) = $0 {
+                return tidalArtist
+            } else {
+                return nil
+            }
+        }
+    }
+
+    var imageArtwork: [TidalArtwork] {
+        return compactMap {
+            if case let .artworks(tidalArtwork) = $0 {
+                guard tidalArtwork.attributes?.mediaType == "IMAGE" else { return nil }
+                return tidalArtwork
+            } else {
+                return nil
+            }
+        }
+    }
+
+    var videoArtwork: [TidalArtwork] {
+        return compactMap {
+            if case let .artworks(tidalArtwork) = $0 {
+                guard tidalArtwork.attributes?.mediaType == "VIDEO" else { return nil }
+                return tidalArtwork
+            } else {
+                return nil
+            }
+        }
+    }
+
+    var playlists: [TidalPlaylist] {
+        return compactMap {
+            if case let .playlists(tidalPlaylist) = $0 {
+                return tidalPlaylist
+            } else {
+                return nil
+            }
+        }
+    }
+
+    var tracks: [TidalTrack] {
+        // Note: The tracks in the JSON (and returned here) seem to be in the same order as on the album.
+        return compactMap {
+            if case let .tracks(tidalTracks) = $0 {
+                return tidalTracks
+            } else {
+                return nil
+            }
+        }
+    }
+
+    var videos: [TidalVideo] {
+        return compactMap {
+            if case let .videos(tidalVideo) = $0 {
+                return tidalVideo
+            } else {
+                return nil
+            }
+        }
+    }
+}

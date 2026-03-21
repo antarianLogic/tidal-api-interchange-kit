@@ -26,7 +26,7 @@ struct TidalAPIEndpointsTests {
         #expect(endpoint.queryParameters[1].name == "countryCode")
         #expect(endpoint.queryParameters[1].value == "US")
         #expect(endpoint.queryParameters[2].name == "include")
-        #expect(endpoint.queryParameters[2].value == "tracks")
+        #expect(endpoint.queryParameters[2].value == "profileArt,tracks")
         #expect(endpoint.body == nil)
         #expect(endpoint.pageSizeQueryItem == nil)
         #expect(endpoint.offsetQueryItem == nil)

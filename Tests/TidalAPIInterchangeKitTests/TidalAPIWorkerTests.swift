@@ -30,7 +30,7 @@ struct TidalAPIWorkerTests {
         let artistAttributes = try #require(artistAndTracks.data.attributes)
         #expect(artistAttributes.name == "Pixies")
         let included = try #require(artistAndTracks.included)
-        #expect(included.count == 20)
+        #expect(included.count == 21)
         let tracks = artistAndTracks.tracks
         #expect(tracks.count == 20)
         let firstTrack = try #require(tracks.first)
@@ -41,6 +41,28 @@ struct TidalAPIWorkerTests {
         #expect(lastTrack.id == "49794929")
         let lastTrackAttributes = try #require(lastTrack.attributes)
         #expect(lastTrackAttributes.title == "Where Is My Mind?")
+        let imageArtwork = artistAndTracks.imageArtwork
+        #expect(imageArtwork.count == 1)
+        let firstImage = try #require(imageArtwork.first)
+        #expect(firstImage.attributes?.mediaType == "IMAGE")
+        #expect(firstImage.id == "AmhFAmq4OGPBTbnvbkL")
+        #expect(firstImage.attributes?.files.count == 4)
+        let smallestImage = try #require(artistAndTracks.smallestImage)
+        #expect(smallestImage.href == "https://resources.tidal.com/images/5d4aaf58/42cb/47a8/8846/cbf425b09944/160x160.jpg")
+        #expect(smallestImage.meta?.width == 160)
+        #expect(smallestImage.meta?.height == 160)
+        let largestImage = try #require(artistAndTracks.largestImage)
+        #expect(largestImage.href == "https://resources.tidal.com/images/5d4aaf58/42cb/47a8/8846/cbf425b09944/750x750.jpg")
+        #expect(largestImage.meta?.width == 750)
+        #expect(largestImage.meta?.height == 750)
+        let smallestImageOver80 = try #require(artistAndTracks.smallestImageWithSizeAtLeast(width: 161, height: 161))
+        #expect(smallestImageOver80.href == "https://resources.tidal.com/images/5d4aaf58/42cb/47a8/8846/cbf425b09944/320x320.jpg")
+        #expect(smallestImageOver80.meta?.width == 320)
+        #expect(smallestImageOver80.meta?.height == 320)
+        let smallestImageAtLeast320 = try #require(artistAndTracks.smallestImageWithSizeAtLeast(width: 320, height: 320))
+        #expect(smallestImageAtLeast320.href == "https://resources.tidal.com/images/5d4aaf58/42cb/47a8/8846/cbf425b09944/320x320.jpg")
+        #expect(smallestImageAtLeast320.meta?.width == 320)
+        #expect(smallestImageAtLeast320.meta?.height == 320)
     }
 
     @Test("Failing get tracks for TIDAL artist ID",

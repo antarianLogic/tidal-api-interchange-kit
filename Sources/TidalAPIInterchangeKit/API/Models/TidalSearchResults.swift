@@ -30,60 +30,30 @@ public extension TidalSearchResults {
     var albums: [TidalAlbum] {
         guard let included else { return [] }
 
-        return included.compactMap {
-            if case let .albums(tidalAlbum) = $0 {
-                return tidalAlbum
-            } else {
-                return nil
-            }
-        }
+        return included.albums
     }
 
     var artists: [TidalArtist] {
         guard let included else { return [] }
 
-        return included.compactMap {
-            if case let .artists(tidalArtist) = $0 {
-                return tidalArtist
-            } else {
-                return nil
-            }
-        }
+        return included.artists
     }
 
     var playlists: [TidalPlaylist] {
         guard let included else { return [] }
 
-        return included.compactMap {
-            if case let .playlists(tidalPlaylist) = $0 {
-                return tidalPlaylist
-            } else {
-                return nil
-            }
-        }
+        return included.playlists
     }
 
     var tracks: [TidalTrack] {
         guard let included else { return [] }
 
-        return included.compactMap {
-            if case let .tracks(tidalTracks) = $0 {
-                return tidalTracks
-            } else {
-                return nil
-            }
-        }
+        return included.tracks
     }
 
     var videos: [TidalVideo] {
         guard let included else { return [] }
 
-        return included.compactMap {
-            if case let .videos(tidalVideo) = $0 {
-                return tidalVideo
-            } else {
-                return nil
-            }
-        }
+        return included.videos
     }
 }

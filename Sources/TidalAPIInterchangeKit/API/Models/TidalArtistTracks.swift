@@ -27,15 +27,24 @@ public struct TidalArtistTracks: Codable, Equatable, Hashable, Sendable {
 }
 
 public extension TidalArtistTracks {
+
     var tracks: [TidalTrack] {
         guard let included else { return [] }
 
-        return included.compactMap {
-            if case let .tracks(tidalTracks) = $0 {
-                return tidalTracks
-            } else {
-                return nil
-            }
-        }
+        return included.tracks
+    }
+
+    var imageArtwork: [TidalArtwork] {
+        guard let included else { return [] }
+
+        return included.imageArtwork
+    }
+
+    var smallestImage: TidalArtworkFile? { imageArtwork.first?.smallestImage }
+
+    var largestImage: TidalArtworkFile? { imageArtwork.first?.largestImage }
+
+    func smallestImageWithSizeAtLeast(width: Int, height: Int) -> TidalArtworkFile? {
+        return imageArtwork.first?.smallestImageWithSizeAtLeast(width: width, height: height)
     }
 }

@@ -86,6 +86,12 @@
         }
       },
       "profileArt": {
+        "data": [
+          {
+            "id": "AmhFAmq4OGPBTbnvbkL",
+            "type": "artworks"
+          }
+        ],
         "links": {
           "self": "/artists/3565255/relationships/profileArt?countryCode=US&collapseBy=FINGERPRINT"
         }
@@ -194,9 +200,58 @@
     }
   },
   "links": {
-    "self": "/artists/3565255?include=tracks&countryCode=US&collapseBy=FINGERPRINT"
+    "self": "/artists/3565255?include=profileArt%2Ctracks&countryCode=US&collapseBy=FINGERPRINT"
   },
   "included": [
+    {
+      "id": "AmhFAmq4OGPBTbnvbkL",
+      "type": "artworks",
+      "attributes": {
+        "mediaType": "IMAGE",
+        "files": [
+          {
+            "href": "https://resources.tidal.com/images/5d4aaf58/42cb/47a8/8846/cbf425b09944/750x750.jpg",
+            "meta": {
+              "width": 750,
+              "height": 750
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/5d4aaf58/42cb/47a8/8846/cbf425b09944/480x480.jpg",
+            "meta": {
+              "width": 480,
+              "height": 480
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/5d4aaf58/42cb/47a8/8846/cbf425b09944/320x320.jpg",
+            "meta": {
+              "width": 320,
+              "height": 320
+            }
+          },
+          {
+            "href": "https://resources.tidal.com/images/5d4aaf58/42cb/47a8/8846/cbf425b09944/160x160.jpg",
+            "meta": {
+              "width": 160,
+              "height": 160
+            }
+          }
+        ],
+        "visualMetadata": {
+          "selectedPaletteColor": "#004448",
+          "blurHash": "UfAW6XaxRjWB%#V@V@aey?WBV@aej[kCWBae",
+          "status": "OK"
+        }
+      },
+      "relationships": {
+        "owners": {
+          "links": {
+            "self": "/artworks/AmhFAmq4OGPBTbnvbkL/relationships/owners?countryCode=US"
+          }
+        }
+      }
+    },
     {
       "id": "2203300",
       "type": "tracks",

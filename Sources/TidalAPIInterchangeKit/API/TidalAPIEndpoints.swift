@@ -53,7 +53,7 @@ public enum TidalAPIEndpoints {
                             headers: headers(withAccessToken: accessToken),
                             queryParameters: [URLQueryItem(name: "collapseBy", value: "FINGERPRINT"),
                                               URLQueryItem(name: "countryCode", value: countryCode),
-                                              URLQueryItem(name: "include", value: "tracks")])
+                                              URLQueryItem(name: "include", value: "profileArt,tracks")])
     }
 
     /// Creates an endpoint suitable to return album details for a known TIDAL album ID

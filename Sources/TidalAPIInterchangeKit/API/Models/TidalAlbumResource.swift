@@ -30,78 +30,28 @@ public extension TidalAlbumResource {
 
     var tracks: [TidalTrack] {
         guard let included else { return [] }
-        // Note: The tracks in the JSON (and returned here) seem to be in the same order as on the album.
-        return included.compactMap {
-            if case let .tracks(tidalTracks) = $0 {
-                return tidalTracks
-            } else {
-                return nil
-            }
-        }
+
+        return included.tracks
     }
 
     var imageArtwork: [TidalArtwork] {
         guard let included else { return [] }
 
-        return included.compactMap {
-            if case let .artworks(tidalArtwork) = $0 {
-                guard tidalArtwork.attributes?.mediaType == "IMAGE" else { return nil }
-                return tidalArtwork
-            } else {
-                return nil
-            }
-        }
+        return included.imageArtwork
     }
 
-    var smallestImage: TidalArtworkFile? {
-        guard let attributes = imageArtwork.first?.attributes else { return nil }
+    var smallestImage: TidalArtworkFile? { imageArtwork.first?.smallestImage }
 
-        return attributes.files.min { lhsFile, rhsFile in
-            (lhsFile.meta?.width ?? 0) * (lhsFile.meta?.height ?? 0) < (rhsFile.meta?.width ?? 0) * (rhsFile.meta?.height ?? 0)
-        }
-    }
-
-    var largestImage: TidalArtworkFile? {
-        guard let attributes = imageArtwork.first?.attributes else { return nil }
-
-        return attributes.files.max { lhsFile, rhsFile in
-            (lhsFile.meta?.width ?? 0) * (lhsFile.meta?.height ?? 0) < (rhsFile.meta?.width ?? 0) * (rhsFile.meta?.height ?? 0)
-        }
-    }
+    var largestImage: TidalArtworkFile? { imageArtwork.first?.largestImage }
 
     func smallestImageWithSizeAtLeast(width: Int, height: Int) -> TidalArtworkFile? {
-        guard let attributes = imageArtwork.first?.attributes else { return nil }
-
-        return attributes.files.reduce(nil) {
-            guard let fileWidth = $1.meta?.width,
-                  let fileHeight = $1.meta?.height,
-                  fileWidth >= width,
-                  fileHeight >= height else { return $0 }
-
-            guard let accumulatedFile = $0,
-                  let accumulatedWidth = accumulatedFile.meta?.width,
-                  let accumulatedHeight = accumulatedFile.meta?.height else { return $1 }
-
-            if fileWidth < accumulatedWidth,
-               fileHeight < accumulatedHeight {
-                return $1
-            } else {
-                return accumulatedFile
-            }
-        }
+        return imageArtwork.first?.smallestImageWithSizeAtLeast(width: width, height: height)
     }
 
     var videoArtwork: [TidalArtwork] {
         guard let included else { return [] }
 
-        return included.compactMap {
-            if case let .artworks(tidalArtwork) = $0 {
-                guard tidalArtwork.attributes?.mediaType == "VIDEO" else { return nil }
-                return tidalArtwork
-            } else {
-                return nil
-            }
-        }
+        return included.videoArtwork
     }
 
     func trackAt(volumeNumber: Int, trackNumber: Int) -> TidalTrack? {

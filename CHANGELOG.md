@@ -9,14 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `smallestImage` in `TidalAlbumResource`
-- `largestImage` in `TidalAlbumResource`
-- `smallestImageWithSizeAtLeast(width:height:)` in `TidalAlbumResource`
+- `smallestImage` in `TidalAlbumResource` and `TidalArtistTracks`
+- `largestImage` in `TidalAlbumResource` and `TidalArtistTracks`
+- `smallestImageWithSizeAtLeast(width:height:)` in `TidalAlbumResource` and `TidalArtistTracks`
+- `imageArtwork` in `TidalArtistTracks`
 
 ### Changed
 
 - `TidalAlbumResource`: `images` renamed to `imageArtwork`
 - `TidalAlbumResource`: `videos` renamed to `videoArtwork`
+- `TidalAPIEndpoints`: `artistTracks` endpoint now passes `profileArt` to `include` query parameter
+- `TidalAPIWorker`: `getTracksForArtist` now returns artist profile artwork
 
 ### Deprecated
 TBD
