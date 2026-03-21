@@ -40,7 +40,7 @@ public extension TidalAlbumResource {
         }
     }
 
-    var images: [TidalArtwork] {
+    var imageArtwork: [TidalArtwork] {
         guard let included else { return [] }
 
         return included.compactMap {
@@ -53,7 +53,45 @@ public extension TidalAlbumResource {
         }
     }
 
-    var videos: [TidalArtwork] {
+    var smallestImage: TidalArtworkFile? {
+        guard let attributes = imageArtwork.first?.attributes else { return nil }
+
+        return attributes.files.min { lhsFile, rhsFile in
+            (lhsFile.meta?.width ?? 0) * (lhsFile.meta?.height ?? 0) < (rhsFile.meta?.width ?? 0) * (rhsFile.meta?.height ?? 0)
+        }
+    }
+
+    var largestImage: TidalArtworkFile? {
+        guard let attributes = imageArtwork.first?.attributes else { return nil }
+
+        return attributes.files.max { lhsFile, rhsFile in
+            (lhsFile.meta?.width ?? 0) * (lhsFile.meta?.height ?? 0) < (rhsFile.meta?.width ?? 0) * (rhsFile.meta?.height ?? 0)
+        }
+    }
+
+    func smallestImageWithSizeAtLeast(width: Int, height: Int) -> TidalArtworkFile? {
+        guard let attributes = imageArtwork.first?.attributes else { return nil }
+
+        return attributes.files.reduce(nil) {
+            guard let fileWidth = $1.meta?.width,
+                  let fileHeight = $1.meta?.height,
+                  fileWidth >= width,
+                  fileHeight >= height else { return $0 }
+
+            guard let accumulatedFile = $0,
+                  let accumulatedWidth = accumulatedFile.meta?.width,
+                  let accumulatedHeight = accumulatedFile.meta?.height else { return $1 }
+
+            if fileWidth < accumulatedWidth,
+               fileHeight < accumulatedHeight {
+                return $1
+            } else {
+                return accumulatedFile
+            }
+        }
+    }
+
+    var videoArtwork: [TidalArtwork] {
         guard let included else { return [] }
 
         return included.compactMap {
